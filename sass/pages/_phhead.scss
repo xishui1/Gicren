@@ -1,0 +1,119 @@
+.ph-head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: none;
+    height: $phhead-height;
+    background: $theme;
+    padding: 0 24*$px;
+
+    .logo-wap {
+        display: inline-block;
+        background: url(../images/PIC-GicrenLogo.png) no-repeat 0 0;
+        width: 175*$px;
+        height: 61*$px;
+        background-size: 175*$px 78*$px;
+        margin-top: 18*$px;
+
+    }
+
+
+    .ph-head-right {
+        position: absolute;
+        right: 24*$px;
+        top: 0;
+    }
+
+    .btn-link,.btn-search-exit {
+        float: left;
+        text-align: center;
+        width: 48*$px;
+        height: 48*$px;
+        padding: 24*$px 24*$px;
+        cursor: pointer;
+
+    }
+
+    .menu-toggle {
+        position: relative;
+
+        .line, &:after, &:before {
+            content: "";
+            position: absolute;
+            width: 40*$px;
+            left: 50%;
+            height: 2px;
+            background: #fff;
+        }
+
+        .line {
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        &:before {
+            top: 28*$px;
+            transform: translate(-50%, 0);
+        }
+
+        &:after {
+            bottom: 28*$px;
+            transform: translate(-50%, 0);
+
+        }
+    }
+
+    .btn-search {
+
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMzAgMzAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I2ZmZjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNSAyOS41Yy0uNi42LTEuNi42LTIuMiAwTDIwIDIyLjJjLTQuOSAzLjgtMTEuOSAzLjQtMTYuNC0xLTQuOS00LjktNC45LTEyLjcgMC0xNy42czEyLjctNC45IDE3LjYgMGM0LjUgNC41IDQuOCAxMS41IDEgMTYuNGw3LjMgNy4zYy43LjcuNyAxLjYgMCAyLjJ6TTE5IDUuOGMtMy42LTMuNi05LjUtMy42LTEzLjIgMHMtMy42IDkuNSAwIDEzLjJjMy42IDMuNiA5LjUgMy42IDEzLjIgMCAzLjYtMy43IDMuNi05LjYgMC0xMy4yeiIvPjwvc3ZnPg==) center no-repeat;
+        background-size: 48*$px 48*$px;
+    }
+
+    .seach-wap {
+        display: none;
+    }
+}
+
+.ph-head-search {
+    position: relative;
+    .menu-toggle, .ph-head-right {
+        display: none;
+    } 
+    .seach-wap {
+        position: absolute;
+        display: block; 
+        margin:0 90*$px ;
+        top:0;
+        right:0;
+        background:rgba(255,255,255,.5);
+    }
+
+    .btn-search-exit {
+        position: absolute;
+        right:-96*$px;
+        top:0;
+         &:after, &:before {
+            content: "";
+            position: absolute;
+            width: 40*$px;
+            left: 50%;
+            height: 2px;
+            background: #fff;
+        } 
+        &:before {
+            width: 48*$px;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg); 
+        }
+
+        &:after {
+            width: 48*$px;
+            top: 50%;
+            bottom: 0;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+}

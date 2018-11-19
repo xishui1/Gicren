@@ -1,0 +1,218 @@
+body, html, ul, li, p, input, h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0; }
+
+ul {
+  list-style: none; }
+
+i {
+  font-style: normal; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none; }
+
+iframe {
+  display: block; }
+
+body, html {
+  height: 100%;
+  font: 12px/1.5 Microsoft Yahei,tahoma,sans-serif;
+  color: #333; }
+
+body {
+  height: 100%;
+  color: #333;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  box-sizing: content-box; }
+
+iframe {
+  display: block;
+  border: none;
+  width: 100%; }
+
+li, a, button, input {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0); }
+
+.minwh {
+  min-width: 1024px; }
+
+.left-nav-bar {
+  padding: 8px 0; }
+  .left-nav-bar .open .left-nav-bar-sub {
+    display: block;
+    background: #000c17; }
+  .left-nav-bar .open .link {
+    color: #00be06; }
+  .left-nav-bar .open .fa {
+    margin-top: -8px;
+    border-width: 8px 0 8px 10px;
+    left: 18px;
+    border-color: transparent transparent transparent #00be06;
+    animation: faanimation .2s ease-out forwards; }
+  .left-nav-bar .open .link:hover .fa {
+    margin-top: -8px;
+    border-color: transparent transparent transparent #00be06;
+    border-width: 8px 0 8px 10px; }
+  .left-nav-bar .link, .left-nav-bar a {
+    display: block;
+    padding: 0 50px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer; }
+    .left-nav-bar .link:hover, .left-nav-bar a:hover {
+      color: #00be06; }
+  .left-nav-bar .sel, .left-nav-bar .sel:hover {
+    background: #00be06;
+    color: #fff; }
+  .left-nav-bar .link {
+    position: relative;
+    transition: .1s all; }
+    .left-nav-bar .link:hover .fa {
+      border-color: #00be06 transparent transparent; }
+  .left-nav-bar .fa {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    display: block;
+    margin-top: -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 8px 0;
+    border-color: #fff transparent transparent;
+    transform-origin: center; }
+
+.left-nav-bar-sub {
+  display: none; }
+
+@keyframes faanimation {
+  0% {
+    left: 20px;
+    margin-top: -5px;
+    border-color: #00be06 transparent transparent;
+    border-width: 10px 8px 0;
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-60deg); }
+  100% {
+    left: 20px;
+    margin-top: -5px;
+    border-color: #00be06 transparent transparent;
+    border-width: 10px 8px 0;
+    transform: rotate(-90deg); } }
+.menuslide {
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  background: #232325;
+  overflow: hidden; }
+  .menuslide .logo-wap {
+    display: block;
+    height: 120px;
+    background: url(../images/PIC-GicrenLogo.png) center no-repeat #00be06; }
+
+.menuslide .logo-wap, .menu-wap, .menuslide .menu-bottom-wap {
+  position: absolute;
+  left: 0;
+  right: 0; }
+
+.menu-wap {
+  top: 124px;
+  bottom: 124px;
+  right: -20px;
+  overflow: auto; }
+
+.menu-bottom-wap {
+  position: absolute;
+  bottom: 0;
+  padding: 12px 0 24px; }
+  .menu-bottom-wap:before {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    right: 24px;
+    content: "";
+    background: #3a3a3a;
+    height: 1px; }
+
+.menu-bottom-links {
+  word-spacing: -4px; }
+  .menu-bottom-links .item-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 33%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer; }
+    .menu-bottom-links .item-link:hover {
+      color: #00be06; }
+    .menu-bottom-links .item-link + .item-link:before {
+      position: absolute;
+      content: "";
+      left: -1px;
+      top: 30%;
+      width: 1px;
+      height: 40%;
+      background: #eee; }
+
+.menu-bottom-wap .seach-wap {
+  position: relative;
+  border-radius: 32px;
+  margin: 4px 24px 0 16px;
+  height: 24px;
+  background: #333;
+  padding: 6px 50px 6px 12px; }
+  .menu-bottom-wap .seach-wap:hover {
+    background: #3a3a3a; }
+  .menu-bottom-wap .seach-wap .btn-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 18px;
+    width: 21px;
+    height: 21px;
+    padding: 8px 16px 9px;
+    cursor: pointer;
+    overflow: hidden; }
+    .menu-bottom-wap .seach-wap .btn-search:after {
+      content: "";
+      display: block;
+      color: #fff;
+      background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMzAgMzAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I2ZmZjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNSAyOS41Yy0uNi42LTEuNi42LTIuMiAwTDIwIDIyLjJjLTQuOSAzLjgtMTEuOSAzLjQtMTYuNC0xLTQuOS00LjktNC45LTEyLjcgMC0xNy42czEyLjctNC45IDE3LjYgMGM0LjUgNC41IDQuOCAxMS41IDEgMTYuNGw3LjMgNy4zYy43LjcuNyAxLjYgMCAyLjJ6TTE5IDUuOGMtMy42LTMuNi05LjUtMy42LTEzLjIgMHMtMy42IDkuNSAwIDEzLjJjMy42IDMuNiA5LjUgMy42IDEzLjIgMCAzLjYtMy43IDMuNi05LjYgMC0xMy4yeiIvPjwvc3ZnPg==);
+      width: 21px;
+      height: 21px;
+      background-size: 21px 21px; }
+    .menu-bottom-wap .seach-wap .btn-search:hover:after {
+      background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjIxIiB2aWV3Qm94PSIwIDAgMzAgMzAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6IzAwYmUwNjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNSAyOS41Yy0uNi42LTEuNi42LTIuMiAwTDIwIDIyLjJjLTQuOSAzLjgtMTEuOSAzLjQtMTYuNC0xLTQuOS00LjktNC45LTEyLjcgMC0xNy42czEyLjctNC45IDE3LjYgMGM0LjUgNC41IDQuOCAxMS41IDEgMTYuNGw3LjMgNy4zYy43LjcuNyAxLjYgMCAyLjJ6TTE5IDUuOGMtMy42LTMuNi05LjUtMy42LTEzLjIgMHMtMy42IDkuNSAwIDEzLjJjMy42IDMuNiA5LjUgMy42IDEzLjIgMCAzLjYtMy43IDMuNi05LjYgMC0xMy4yeiIvPjwvc3ZnPg==); }
+
+.seach-wap .seach-input {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  height: 24px;
+  width: 100%;
+  color: #fff; }
+
+.maincon {
+  height: 100%;
+  margin-left: 240px;
+  background: #f5f5f5; }
+  .maincon .pdfiframe {
+    height: 100%;
+    background: #fff; }

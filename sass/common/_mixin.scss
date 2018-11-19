@@ -1,0 +1,50 @@
+$px:1rem*1/75 !default;
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+@mixin keep-all() {
+
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+@mixin nowrap($textoverflow:ellipsis) {
+    @include keep-all();
+    overflow: hidden;
+    text-overflow: $textoverflow;
+}
+
+%commonbg {
+    background: url(../images/common.svg);
+    background-size: 100*$px 100*$px;
+}
+
+@mixin hz($attr, $value) {
+    #{$attr}: $value;
+    -ms-#{$attr}: $value;
+    -moz-#{$attr}: $value;
+    -webkit-#{$attr}: $value;
+    -o-#{$attr}: $value;
+}
+
+@mixin placeholder($selector, $color) {
+    #{$selector}::-webkit-input-placeholder {
+        color: $color
+    }
+    #{$selector}::-moz-placeholder {
+        color: $color
+    }
+    #{$selector}:-ms-input-placeholder {
+        color: $color
+    }
+}
+
+@mixin clearspace() {
+    word-spacing: -4*$px;
+}
+

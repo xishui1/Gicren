@@ -1,0 +1,131 @@
+.menuslide {
+    position: fixed;
+    width: $menu-width;
+    height: 100%;
+    background: #232325;
+    overflow: hidden;
+
+    .logo-wap {
+        display: block;
+        height: 120*$px;
+        background: url(../images/PIC-GicrenLogo.png) center no-repeat $theme-darken;
+    }
+
+
+}
+
+
+.menuslide .logo-wap, .menu-wap,.menuslide  .menu-bottom-wap {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.menu-wap {
+    top: 124*$px;
+    bottom: 124*$px;
+    right: -20*$px;
+    overflow: auto;
+}
+
+.menu-bottom-wap {
+    position: absolute;
+    bottom: 0;
+    padding: 12*$px 0 24*$px; 
+    &:before {
+        position: absolute;
+        top: 0; 
+        left: 16*$px;
+        right: 24*$px;
+        content: "";
+        background: #3a3a3a;
+        height: 1px;
+
+    }
+}
+
+.menu-bottom-links {
+    @include clearspace();
+
+    .item-link {
+        position: relative;
+        @include inline-block;
+        width: 33%;
+        color: #fff;
+        font-size: 14*$px;
+        line-height: 48*$px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            color: $theme;
+        }
+
+        &+.item-link {
+            &:before {
+                position: absolute;
+                content: "";
+                left: -1px;
+                top: 30%;
+                width: 1px;
+                height: 40%;
+                background: #eee;
+
+            }
+        }
+    }
+
+}
+
+.menu-bottom-wap .seach-wap {
+    position: relative;
+    border-radius: 32*$px;
+    margin: 4*$px 24*$px 0 16*$px;
+    height: 24*$px;
+    background: #333;
+    padding: 6*$px 50*$px 6*$px 12*$px; 
+    &:hover {
+        background: #3a3a3a; 
+    }
+
+    .btn-search {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 18*$px;
+        width: 21*$px;
+        height: 21*$px;
+        padding: 8*$px 16*$px 9*$px;
+        cursor: pointer;
+        overflow: hidden; 
+        &:after {
+            content: "";
+            display: block;
+            color: #fff;
+            background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMzAgMzAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I2ZmZjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNSAyOS41Yy0uNi42LTEuNi42LTIuMiAwTDIwIDIyLjJjLTQuOSAzLjgtMTEuOSAzLjQtMTYuNC0xLTQuOS00LjktNC45LTEyLjcgMC0xNy42czEyLjctNC45IDE3LjYgMGM0LjUgNC41IDQuOCAxMS41IDEgMTYuNGw3LjMgNy4zYy43LjcuNyAxLjYgMCAyLjJ6TTE5IDUuOGMtMy42LTMuNi05LjUtMy42LTEzLjIgMHMtMy42IDkuNSAwIDEzLjJjMy42IDMuNiA5LjUgMy42IDEzLjIgMCAzLjYtMy43IDMuNi05LjYgMC0xMy4yeiIvPjwvc3ZnPg==);
+            width: 21*$px;
+            height: 21*$px;
+            background-size: 21*$px 21*$px;
+        }
+
+        &:hover:after {
+            background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjIxIiB2aWV3Qm94PSIwIDAgMzAgMzAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6IzAwYmUwNjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNSAyOS41Yy0uNi42LTEuNi42LTIuMiAwTDIwIDIyLjJjLTQuOSAzLjgtMTEuOSAzLjQtMTYuNC0xLTQuOS00LjktNC45LTEyLjcgMC0xNy42czEyLjctNC45IDE3LjYgMGM0LjUgNC41IDQuOCAxMS41IDEgMTYuNGw3LjMgNy4zYy43LjcuNyAxLjYgMCAyLjJ6TTE5IDUuOGMtMy42LTMuNi05LjUtMy42LTEzLjIgMHMtMy42IDkuNSAwIDEzLjJjMy42IDMuNiA5LjUgMy42IDEzLjIgMCAzLjYtMy43IDMuNi05LjYgMC0xMy4yeiIvPjwvc3ZnPg==);
+        }
+    }
+
+    
+}
+.seach-wap{
+    
+    .seach-input {
+        background: transparent;
+        outline: none;
+        border: none;
+        font-size: 16*$px;
+        line-height: 24*$px;
+        height: 24*$px;
+        width: 100%;
+        color: #fff;
+
+    } 
+}
