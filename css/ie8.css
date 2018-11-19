@@ -49,16 +49,16 @@ li, a, button, input {
     display: block;
     background: #000c17; }
   .left-nav-bar .open .link {
-    color: #00be06; }
+    color: #459245; }
   .left-nav-bar .open .fa {
     margin-top: -8px;
     border-width: 8px 0 8px 10px;
     left: 18px;
-    border-color: transparent transparent transparent #00be06;
+    border-color: transparent transparent transparent #459245;
     animation: faanimation .2s ease-out forwards; }
   .left-nav-bar .open .link:hover .fa {
     margin-top: -8px;
-    border-color: transparent transparent transparent #00be06;
+    border-color: transparent transparent transparent #459245;
     border-width: 8px 0 8px 10px; }
   .left-nav-bar .link, .left-nav-bar a {
     display: block;
@@ -68,15 +68,15 @@ li, a, button, input {
     font-size: 18px;
     cursor: pointer; }
     .left-nav-bar .link:hover, .left-nav-bar a:hover {
-      color: #00be06; }
+      color: #459245; }
   .left-nav-bar .sel, .left-nav-bar .sel:hover {
-    background: #00be06;
+    background: #276327;
     color: #fff; }
   .left-nav-bar .link {
     position: relative;
     transition: .1s all; }
     .left-nav-bar .link:hover .fa {
-      border-color: #00be06 transparent transparent; }
+      border-color: #459245 transparent transparent; }
   .left-nav-bar .fa {
     position: absolute;
     left: 20px;
@@ -97,7 +97,7 @@ li, a, button, input {
   0% {
     left: 20px;
     margin-top: -5px;
-    border-color: #00be06 transparent transparent;
+    border-color: #459245 transparent transparent;
     border-width: 10px 8px 0;
     transform: rotate(0deg); }
   50% {
@@ -105,7 +105,7 @@ li, a, button, input {
   100% {
     left: 20px;
     margin-top: -5px;
-    border-color: #00be06 transparent transparent;
+    border-color: #459245 transparent transparent;
     border-width: 10px 8px 0;
     transform: rotate(-90deg); } }
 .menuslide {
@@ -117,7 +117,7 @@ li, a, button, input {
   .menuslide .logo-wap {
     display: block;
     height: 120px;
-    background: url(../images/PIC-GicrenLogo.png) center no-repeat #00be06; }
+    background: url(../images/PIC-GicrenLogo.png) center no-repeat #276327; }
 
 .menuslide .logo-wap, .menu-wap, .menuslide .menu-bottom-wap {
   position: absolute;
@@ -159,7 +159,7 @@ li, a, button, input {
     text-align: center;
     cursor: pointer; }
     .menu-bottom-links .item-link:hover {
-      color: #00be06; }
+      color: #459245; }
     .menu-bottom-links .item-link + .item-link:before {
       position: absolute;
       content: "";

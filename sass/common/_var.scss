@@ -1,7 +1,7 @@
-$theme:#00be06;
-$theme-darken: #00be06;
+$theme: #459245;
+$theme-darken:rgba(39,99,39,1);
 $menu-sel:$theme;
-$menu-sel-bg: #00be06; 
+$menu-sel-bg: $theme-darken; 
 
 $menu-width:240*$px;
 $phhead-height:96*$px;

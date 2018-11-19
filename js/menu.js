@@ -1,9 +1,21 @@
 !(function() {
+    var htmlText = {
+        cn: {
+            "contact": "联络",
+            "forum": "论坛"
+        },
+        en: {
+            "contact": "contact",
+            "forum": "forum"
+        }
+
+    }
     var menuslide = function(data) {
         this.el = {
             menuWap: ".menu-wap",
             menuWapContain: ".menuslide",
-            menuUlWap: ".left-nav-bar"
+            menuUlWap: ".left-nav-bar",
+            languageWap: "#languageToggle"
         }
         this.language = "cn";
         this.multiple = false;
@@ -14,7 +26,7 @@
         init: function(data) {
             data.language && (this.language = data.language);
             data.multiple && (this.language = data.multiple);
-
+            this.dataMenu = data.menu;
             this.drawMenu(data.menu);
             this.bindEvent();
 
@@ -36,7 +48,7 @@
                 html.push("<ul class=\"left-nav-bar-sub\">")
             }
             for (var i = 0; i < l; i++) {
-                html.push("<li><a href=\"#\"  pdf=\""+data[i].pdf+"\">" + this.getText(data[i]) + "</a></li>");
+                html.push("<li><a href=\"#\"  pdf=\"" + data[i].pdf + "\">" + this.getText(data[i]) + "</a></li>");
             }
             if (l > 0) {
                 html.push("</ul>")
@@ -50,9 +62,10 @@
             $(this.el.menuUlWap + " .link").on('click', { el: this.el, multiple: this.multiple }, this.menuOpenToggle);
 
             $(this.el.menuUlWap + " a").on('click', { el: this.el }, this.itemSel)
-
             $(".ph-head .menu-toggle ").on('click', this.menuToggle);
-            $(".ph-head .ph-head-right .btn-search ").on('click', this.phsearchToggle);
+            $(".ph-head .ph-head-right .btn-search ").on('click', this.phsearchShow);
+            $(".ph-head .seach-wap .btn-search-exit").on('click', this.phsearchHide);
+            $(this.el.languageWap).on('click', { _this: this }, this.languageToggle);
         },
         menuOpenToggle: function(e) {
             var $el = $(e.data.el.menuUlWap),
@@ -64,21 +77,31 @@
 
             if (!e.data.multiple) {
                 $el.find('.left-nav-bar-sub').not($next).slideUp().parent().removeClass('open');
-            }; 
+            };
         },
-        itemSel: function(e) { 
+        itemSel: function(e) {
             var $this = $(this);
             $(e.data.el.menuUlWap).find(".sel").removeClass("sel");
             $this.addClass("sel");
 
-           
+
         },
         menuToggle: function(e) {
             $(".mainpage").toggleClass("menu-show-wap");
         },
-        phsearchToggle: function(e) {
-            $(".ph-head").toggleClass("ph-head-search");
+        phsearchShow: function(e) {
+            $(".ph-head").addClass("ph-head-search");
         },
+        phsearchHide: function(e) {
+            $(".ph-head").removeClass("ph-head-search");
+        },
+        languageToggle: function(e) {
+            var $el = e.target,
+                _this = e.data.el._this;
+            $el.text("")
+
+
+        }
 
     }
 
@@ -134,7 +157,7 @@
                         text: "电位器",
                         entext: "Arduino derived controller",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    } ]
+                    }]
 
                 },
                 {
