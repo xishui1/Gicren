@@ -47,7 +47,7 @@ li, a, button, input {
   padding: 8px 0; }
   .left-nav-bar .open .left-nav-bar-sub {
     display: block;
-    background: #000c17; }
+    background: #333; }
   .left-nav-bar .open .link {
     color: #459245; }
   .left-nav-bar .open .fa {
