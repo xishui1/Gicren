@@ -72,7 +72,7 @@
             $(".ph-head .ph-head-right .btn-search ").on('click', this.phsearchShow);
             $(".ph-head  .logo-wap-r").on('click', this.phsearchHide);
             $(this.el.languageWap).on('click', { _this: this }, this.languageToggle);
-        },
+        }, 
         menuOpenToggle: function(e) {
             var $el = $(e.data.el.menuUlWap),
                 $this = $(this),
