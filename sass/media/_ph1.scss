@@ -55,32 +55,37 @@
 
         .left-nav-bar {
             padding: 16*$px 0;
+
+           
+            .link, a {
+                font-size: 42*$px;
+                line-height: 120*$px;
+            }
+
+            .fa {
+                right: 52*$px;
+                left: auto;
+                width: 18*$px;
+                height: 30*$px;
+                top: 50%;
+                background: url("data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEyIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMTIgMjAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I2ZmZjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTIgMTBsLTkuOSA5LjktMS40LTEuNEw5LjIgMTAgLjcgMS41IDIuMS4xbDguNSA4LjVMMTIgMTB6Ii8+PC9zdmc+") no-repeat center;
+                background-size: 100%;
+                transform: translate(0, -50%);
+                margin-top: 0;
+                border: none !important;
+            }
+
+            .open .fa {
+                margin-top: 0;
+                right: 52*$px;
+                left: auto;
+                animation: phfaanimation .2s ease-out forwards;
+
+            }
         }
 
-        .left-nav-bar .link, .left-nav-bar a {
-            font-size: 42*$px;
-            line-height: 120*$px;
-        }
 
-        .fa {
-            right: 52*$px;
-            left: auto;
-            width: 18*$px;
-            height: 30*$px;
-            top: 50%;
-            background: url("data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEyIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMTIgMjAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I2ZmZjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTIgMTBsLTkuOSA5LjktMS40LTEuNEw5LjIgMTAgLjcgMS41IDIuMS4xbDguNSA4LjVMMTIgMTB6Ii8+PC9zdmc+") no-repeat center;
-            background-size: 100%;
-            transform: translate(0, -50%);
-            margin-top: 0;
-            border: none !important;
-        }
 
-        .open .fa {
-            right: 52*$px;
-            left: auto;
-            animation: phfaanimation .2s ease-out forwards;
-
-        }
 
         .menu-bottom-wap {
             padding: 24*$px 0;
@@ -96,14 +101,28 @@
             }
         }
     }
+
+    .len {
+        .left-nav-bar {
+             .link,   a{
+            font-size: 38*$px;
+            padding: 0 48*$px;
+
+             }
+             a{
+               font-size: 32*$px;
+             }
+        }
+    }
 }
+
 @keyframes phfaanimation {
     0% {
 
-        transform: rotate(0deg);
+        transform: translate(0, -50%) rotate(0deg);
     }
 
     100% {
-        transform: rotate(90deg);
+        transform: translate(0, -50%) rotate(90deg);
     }
 }

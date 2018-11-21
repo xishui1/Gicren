@@ -45,6 +45,18 @@ li, a, button, input {
 
 .left-nav-bar {
   padding: 8px 0; }
+  .left-nav-bar li {
+    position: relative; }
+    .left-nav-bar li:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+      right: 36px;
+      height: 1px;
+      background: #3a3a3a; }
+  .left-nav-bar .left-nav-bar-sub li:after {
+    background: #444; }
   .left-nav-bar .open .left-nav-bar-sub {
     display: block;
     background: #333; }
@@ -54,12 +66,9 @@ li, a, button, input {
     margin-top: -8px;
     border-width: 8px 0 8px 10px;
     left: 18px;
-    border-color: transparent transparent transparent #459245;
     animation: faanimation .2s ease-out forwards; }
   .left-nav-bar .open .link:hover .fa {
-    margin-top: -8px;
-    border-color: transparent transparent transparent #459245;
-    border-width: 8px 0 8px 10px; }
+    border-color: transparent transparent transparent #459245; }
   .left-nav-bar .link, .left-nav-bar a {
     display: block;
     padding: 0 50px;
@@ -93,6 +102,20 @@ li, a, button, input {
 .left-nav-bar-sub {
   display: none; }
 
+.len .left-nav-bar .link, .len .left-nav-bar a {
+  font-size: 14px;
+  padding: 0 20px 0 32px;
+  white-space: nowrap; }
+.len .left-nav-bar a {
+  font-size: 13px; }
+.len .left-nav-bar .fa {
+  border-width: 6px 4px 0;
+  margin-top: -3px; }
+.len .left-nav-bar .open .fa {
+  margin-top: -4px;
+  border-width: 4px 0 4px 6px;
+  animation: sfaanimation .2s ease-out forwards; }
+
 @keyframes faanimation {
   0% {
     left: 20px;
@@ -108,9 +131,24 @@ li, a, button, input {
     border-color: #459245 transparent transparent;
     border-width: 10px 8px 0;
     transform: rotate(-90deg); } }
+@keyframes sfaanimation {
+  0% {
+    left: 20px;
+    margin-top: -3px;
+    border-color: #459245 transparent transparent;
+    border-width: 6px 4px 0;
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-60deg); }
+  100% {
+    left: 20px;
+    margin-top: -3px;
+    border-color: #459245 transparent transparent;
+    border-width: 6px 4px 0;
+    transform: rotate(-90deg); } }
 .menuslide {
   position: fixed;
-  width: 240px;
+  width: 250px;
   height: 100%;
   background: #232325;
   overflow: hidden; }
@@ -211,7 +249,7 @@ li, a, button, input {
 
 .maincon {
   height: 100%;
-  margin-left: 240px;
+  margin-left: 250px;
   background: #f5f5f5; }
   .maincon .pdfiframe {
     height: 100%;

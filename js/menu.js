@@ -29,7 +29,13 @@
             this.dataMenu = data.menu;
             this.drawMenu(data.menu);
             this.bindEvent();
+            if(  data.language=="en"){
+                $("body").addClass("len")
+            }
+            else{
 
+                $("body").removeClass("len")
+            }
         },
         drawMenu: function(data) {
             var $con = $(this.el.menuUlWap),
@@ -64,7 +70,7 @@
             $(this.el.menuUlWap + " a").on('click', { el: this.el }, this.itemSel)
             $(".ph-head .menu-toggle ").on('click', this.menuToggle);
             $(".ph-head .ph-head-right .btn-search ").on('click', this.phsearchShow);
-            $(".ph-head .seach-wap .btn-search-exit").on('click', this.phsearchHide);
+            $(".ph-head  .logo-wap-r").on('click', this.phsearchHide);
             $(this.el.languageWap).on('click', { _this: this }, this.languageToggle);
         },
         menuOpenToggle: function(e) {
@@ -95,6 +101,7 @@
         phsearchHide: function(e) {
             $(".ph-head").removeClass("ph-head-search");
         },
+
         languageToggle: function(e) {
             var $el = e.target,
                 _this = e.data.el._this;
@@ -109,7 +116,7 @@
         // body...
         var menudata = {
             "multiple": false,
-            language: "cn",
+            language: "en",
             "menu": [{
                     text: "主控器",
                     entext: "Master controller",
@@ -123,11 +130,11 @@
                 },
                 {
                     text: "传感器",
-                    entext: "Master controller",
+                    entext: "Brushless DC Motor Controller",
                     pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     subMenu: [{
                         text: "惯性传感器",
-                        entext: "Arduino derived controller",
+                        entext: "Brushless DC Motor Controller",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }, {
                         text: "视觉传感器",

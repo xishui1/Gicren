@@ -2,6 +2,24 @@
 
     padding: 8*$px 0;
 
+    li {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 16*$px;
+            right: 36*$px;
+            height: 1px;
+            background: #3a3a3a;
+        }
+    }
+
+    .left-nav-bar-sub li:after {
+        background: #444;
+    }
+
     .open {
         .left-nav-bar-sub {
             display: block;
@@ -17,15 +35,13 @@
             margin-top: -8*$px;
             border-width: 8*$px 0 8*$px 10*$px;
             left: 18*$px;
-            border-color: transparent transparent transparent $menu-sel;
             animation: faanimation .2s ease-out forwards;
         }
 
         .link:hover .fa {
-            margin-top: -8*$px;
             border-color: transparent transparent transparent $menu-sel;
-            border-width: 8*$px 0 8*$px 10*$px;
         }
+
     }
 
     .link, a {
@@ -79,6 +95,34 @@
     display: none;
 }
 
+.len {
+    .left-nav-bar {
+        .link, a {
+            font-size: 14px;
+            padding: 0 20*$px 0 32*$px;
+            white-space: nowrap;
+        }
+
+        a {
+            font-size: 13*$px;
+        }
+
+        .fa {
+            border-width: 6*$px 4*$px 0;
+            margin-top: -3px;
+
+        }
+
+        .open {
+            .fa {
+                margin-top: -4*$px;
+                border-width: 4*$px 0 4*$px 6*$px;
+                animation: sfaanimation .2s ease-out forwards;
+            }
+        }
+    }
+}
+
 @keyframes faanimation {
     0% {
         left: 20*$px;
@@ -97,6 +141,28 @@
         margin-top: -5*$px;
         border-color: $menu-sel transparent transparent;
         border-width: 10*$px 8*$px 0;
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes sfaanimation {
+    0% {
+        left: 20*$px;
+        margin-top: -3*$px;
+        border-color: $menu-sel transparent transparent;
+        border-width: 6*$px 4*$px 0;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-60deg);
+    }
+
+    100% {
+        left: 20*$px;
+        margin-top: -3*$px;
+        border-color: $menu-sel transparent transparent;
+        border-width: 6*$px 4*$px 0;
         transform: rotate(-90deg);
     }
 }

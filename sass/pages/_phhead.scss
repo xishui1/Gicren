@@ -86,9 +86,21 @@
         display: none;
     } 
     .logo-wap {
-        width:61*$px;
-        transform: width .2s;
+        // width:61*$px;
+        // transform: width .2s;
+        display: none;
+
     }
+   
+
+    .logo-wap-r{
+        display: block;
+        width:64*$px;
+        height:100%;
+
+        background:url(../images/Logo_Gicren_96x96.svg) center center / (64*$px 64*$px) no-repeat;
+    }
+   
     .seach-wap {
 
         visibility: visible;
@@ -96,7 +108,8 @@
         display: block; 
         margin:16*$px 0 ;
         top:0;
-        right:96*$px;
+        // right:96*$px;
+        right:42*$px;
         left:116*$px;
         background:rgba(255,255,255,.1);
         height:64*$px; 
