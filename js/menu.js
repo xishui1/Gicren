@@ -116,7 +116,7 @@
         // body...
         var menudata = {
             "multiple": false,
-            language: "en",
+            language: "cn",
             "menu": [{
                     text: "主控器",
                     entext: "Master controller",

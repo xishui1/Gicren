@@ -82,7 +82,7 @@
 
 .ph-head-search {
    
-    .menu-toggle, .ph-head-right {
+    .ph-head-right .btn-search {
         display: none;
     } 
     .logo-wap {
@@ -90,9 +90,7 @@
         // transform: width .2s;
         display: none;
 
-    }
-   
-
+    } 
     .logo-wap-r{
         display: block;
         width:64*$px;
@@ -109,7 +107,8 @@
         margin:16*$px 0 ;
         top:0;
         // right:96*$px;
-        right:42*$px;
+        // right:42*$px;
+        right:120*$px;
         left:116*$px;
         background:rgba(255,255,255,.1);
         height:64*$px; 
