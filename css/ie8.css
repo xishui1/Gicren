@@ -54,9 +54,9 @@ li, a, button, input {
       left: 16px;
       right: 36px;
       height: 1px;
-      background: #3a3a3a; }
+      background: #333; }
   .left-nav-bar .left-nav-bar-sub li:after {
-    background: #444; }
+    background: #232325; }
   .left-nav-bar .open .left-nav-bar-sub {
     display: block;
     background: #333; }

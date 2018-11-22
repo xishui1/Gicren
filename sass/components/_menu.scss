@@ -12,12 +12,13 @@
             left: 16*$px;
             right: 36*$px;
             height: 1px;
-            background: #3a3a3a;
+            background: #333;
         }
+        
     }
 
     .left-nav-bar-sub li:after {
-        background: #444;
+        background: #232325;
     }
 
     .open {
