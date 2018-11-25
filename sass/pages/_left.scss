@@ -55,6 +55,7 @@
         line-height: 48*$px;
         text-align: center;
         cursor: pointer;
+        padding: 0;
 
         &:hover {
             color: $theme;
@@ -66,9 +67,10 @@
                 content: "";
                 left: -1px;
                 top: 30%;
-                width: 1px;
                 height: 40%;
-                background: #eee;
+                
+                width: 1px; 
+                background: #3a3a3a;
 
             }
         }

@@ -47,14 +47,16 @@ li, a, button, input {
   padding: 8px 0; }
   .left-nav-bar li {
     position: relative; }
-    .left-nav-bar li:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 16px;
-      right: 36px;
-      height: 1px;
-      background: #333; }
+    .left-nav-bar li + li {
+      margin-top: 1px; }
+      .left-nav-bar li + li:after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 16px;
+        right: 36px;
+        height: 1px;
+        background: #333; }
   .left-nav-bar .left-nav-bar-sub li:after {
     background: #232325; }
   .left-nav-bar .open .left-nav-bar-sub {
@@ -195,7 +197,8 @@ li, a, button, input {
     font-size: 14px;
     line-height: 48px;
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 0; }
     .menu-bottom-links .item-link:hover {
       color: #459245; }
     .menu-bottom-links .item-link + .item-link:before {
@@ -203,9 +206,9 @@ li, a, button, input {
       content: "";
       left: -1px;
       top: 30%;
-      width: 1px;
       height: 40%;
-      background: #eee; }
+      width: 1px;
+      background: #3a3a3a; }
 
 .menu-bottom-wap .seach-wap {
   position: relative;

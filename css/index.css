@@ -48,14 +48,16 @@ li, a, button, input {
   padding: 0.10667rem 0; }
   .left-nav-bar li {
     position: relative; }
-    .left-nav-bar li:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0.21333rem;
-      right: 0.48rem;
-      height: 1px;
-      background: #333; }
+    .left-nav-bar li + li {
+      margin-top: 1px; }
+      .left-nav-bar li + li:after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 0.21333rem;
+        right: 0.48rem;
+        height: 1px;
+        background: #333; }
   .left-nav-bar .left-nav-bar-sub li:after {
     background: #232325; }
   .left-nav-bar .open .left-nav-bar-sub {
@@ -243,7 +245,8 @@ li, a, button, input {
     font-size: 0.18667rem;
     line-height: 0.64rem;
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 0; }
     .menu-bottom-links .item-link:hover {
       color: #459245; }
     .menu-bottom-links .item-link + .item-link:before {
@@ -251,9 +254,9 @@ li, a, button, input {
       content: "";
       left: -1px;
       top: 30%;
-      width: 1px;
       height: 40%;
-      background: #eee; }
+      width: 1px;
+      background: #3a3a3a; }
 
 .menu-bottom-wap .seach-wap {
   position: relative;
@@ -311,7 +314,7 @@ li, a, button, input {
   display: none;
   height: 1.28rem;
   background: #276327;
-  padding: 0 0.32rem; }
+  padding: 0 0.42667rem; }
   .ph-head .logo-wap {
     display: inline-block;
     background: url(../images/PIC-GicrenLogo.png) no-repeat 0 0;
@@ -321,14 +324,14 @@ li, a, button, input {
     margin-top: 0.24rem; }
   .ph-head .ph-head-right {
     position: absolute;
-    right: 0.16rem;
+    right: 0.21333rem;
     top: 0; }
   .ph-head .btn-link, .ph-head .btn-search-exit {
-    float: left;
+    display: inline-block;
     text-align: center;
-    width: 0.64rem;
-    height: 0.64rem;
-    padding: 0.32rem;
+    width: 0.53333rem;
+    height: 0.53333rem;
+    padding: 0.37333rem 0.21333rem;
     cursor: pointer; }
   .ph-head .menu-toggle {
     position: relative; }
@@ -355,31 +358,38 @@ li, a, button, input {
     background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMzAgMzAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I2ZmZjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNSAyOS41Yy0uNi42LTEuNi42LTIuMiAwTDIwIDIyLjJjLTQuOSAzLjgtMTEuOSAzLjQtMTYuNC0xLTQuOS00LjktNC45LTEyLjcgMC0xNy42czEyLjctNC45IDE3LjYgMGM0LjUgNC41IDQuOCAxMS41IDEgMTYuNGw3LjMgNy4zYy43LjcuNyAxLjYgMCAyLjJ6TTE5IDUuOGMtMy42LTMuNi05LjUtMy42LTEzLjIgMHMtMy42IDkuNSAwIDEzLjJjMy42IDMuNiA5LjUgMy42IDEzLjIgMCAzLjYtMy43IDMuNi05LjYgMC0xMy4yeiIvPjwvc3ZnPg==) center no-repeat;
     background-size: 0.64rem 0.64rem; }
   .ph-head .seach-wap {
-    visibility: hidden;
-    width: 0;
-    padding: 0;
-    -webkit-transform: width .2s;
-            transform: width .2s; }
+    position: absolute;
+    height: 0.85333rem;
+    width: 0.85333rem;
+    height: 0.85333rem;
+    right: 1.17333rem;
+    top: 0.21333rem;
+    -webkit-transition: .4s all;
+    transition: .4s all; }
+    .ph-head .seach-wap .btn-search {
+      position: absolute;
+      right: 0;
+      width: 0.56rem;
+      height: 0.56rem;
+      top: 50%;
+      padding: 0 0.21333rem;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      background-size: 0.56rem 0.56rem;
+      -webkit-transition: 0.1 all;
+      transition: 0.1 all; }
 
-.ph-head-search .ph-head-right .btn-search {
-  display: none; }
 .ph-head-search .logo-wap {
   display: none; }
 .ph-head-search .logo-wap-r {
-  display: block;
+  display: inline-block;
   width: 0.85333rem;
   height: 100%;
-  background: url(../images/Logo_Gicren_96x96.svg) center center/0.85333rem 0.85333rem no-repeat; }
+  background: url(../images/Logo_Gicren_96x96.png) center center/0.85333rem 0.85333rem no-repeat; }
 .ph-head-search .seach-wap {
-  visibility: visible;
-  position: absolute;
-  display: block;
-  margin: 0.21333rem 0;
-  top: 0;
-  right: 1.6rem;
-  left: 1.54667rem;
+  right: 1.38667rem;
+  left: 1.68rem;
   background: rgba(255, 255, 255, 0.1);
-  height: 0.85333rem;
   border-radius: 0.85333rem;
   width: auto; }
   .ph-head-search .seach-wap:hover {
@@ -413,16 +423,6 @@ li, a, button, input {
     bottom: 0;
     -webkit-transform: translate(-50%, -50%) rotate(-45deg);
             transform: translate(-50%, -50%) rotate(-45deg); }
-.ph-head-search .seach-wap .btn-search {
-  position: absolute;
-  right: 0;
-  width: 0.85333rem;
-  height: 0.85333rem;
-  top: 50%;
-  padding: 0 0.21333rem 0 0;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  background-size: 0.56rem 0.56rem; }
 
 @media only screen and (max-width: 768px) {
   .menuslide {
@@ -459,10 +459,10 @@ li, a, button, input {
     top: 0;
     bottom: 1.38667rem; }
   .menu-show-wap .left-nav-bar {
-    padding: 0.21333rem 0; }
+    padding: 0; }
     .menu-show-wap .left-nav-bar .link, .menu-show-wap .left-nav-bar a {
       font-size: 0.56rem;
-      line-height: 1.6rem; }
+      line-height: 1.44rem; }
     .menu-show-wap .left-nav-bar .fa {
       right: 0.69333rem;
       left: auto;
@@ -482,12 +482,21 @@ li, a, button, input {
       -webkit-animation: phfaanimation .2s ease-out forwards;
               animation: phfaanimation .2s ease-out forwards; }
   .menu-show-wap .menu-bottom-wap {
-    padding: 0.32rem 0; }
+    background: #202020;
+    padding: 0; }
+    .menu-show-wap .menu-bottom-wap:before {
+      left: 0;
+      right: 0; }
     .menu-show-wap .menu-bottom-wap .seach-wap {
       display: none; }
     .menu-show-wap .menu-bottom-wap .item-link {
       font-size: 0.48rem;
-      line-height: 0.74667rem; }
+      line-height: 0.74667rem;
+      padding: 0.21333rem 0; }
+      .menu-show-wap .menu-bottom-wap .item-link + .item-link:before {
+        top: 0rem;
+        bottom: 0rem;
+        height: auto; }
 
   .len .left-nav-bar .link, .len .left-nav-bar a {
     font-size: 0.50667rem;
@@ -508,5 +517,4 @@ li, a, button, input {
   100% {
     -webkit-transform: translate(0, -50%) rotate(90deg);
             transform: translate(0, -50%) rotate(90deg); } }
-
 /*# sourceMappingURL=index.css.map */

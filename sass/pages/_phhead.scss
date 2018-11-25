@@ -6,8 +6,8 @@
 
     display: none;
     height: $phhead-height;
-    background:  $theme-darken;
-    padding: 0 24*$px;
+    background: $theme-darken;
+    padding: 0 32*$px;
 
     .logo-wap {
         display: inline-block;
@@ -22,16 +22,16 @@
 
     .ph-head-right {
         position: absolute;
-        right: 12*$px;
+        right: 16*$px;
         top: 0;
     }
 
-    .btn-link,.btn-search-exit {
-        float: left;
+    .btn-link, .btn-search-exit {
+        display: inline-block;
         text-align: center;
-        width: 48*$px;
-        height: 48*$px;
-        padding: 24*$px  ;
+        width: 40*$px;
+        height: 40*$px;
+        padding: 28*$px 16*$px;
         cursor: pointer;
 
     }
@@ -72,76 +72,81 @@
         background-size: 48*$px 48*$px;
     }
 
-    .seach-wap {
-        visibility: hidden;
-        width:0;
-        padding:0;
-        transform: width .2s;
+    .seach-wap { 
+        position: absolute;
+        height: 64*$px;
+        width:64*$px;
+        height: 64*$px;
+        right:88*$px;
+        top:16*$px;
+        transition: .4s all;
+        .btn-search {
+            position: absolute;
+            right: 0;
+            width: 42*$px;
+            height: 42*$px;
+            top: 50%;
+            padding: 0 16*$px  ;
+            transform: translate(0, -50%);
+            background-size: 42*$px 42*$px;
+            transition: .1 all ;
+        }
     }
 }
 
 .ph-head-search {
-   
-    .ph-head-right .btn-search {
-        display: none;
-    } 
-    .logo-wap {
-        // width:61*$px;
-        // transform: width .2s;
+ 
+    .logo-wap { 
         display: none;
 
-    } 
-    .logo-wap-r{
-        display: block;
-        width:64*$px;
-        height:100%;
-
-        background:url(../images/Logo_Gicren_96x96.svg) center center / (64*$px 64*$px) no-repeat;
     }
-   
-    .seach-wap {
 
-        visibility: visible;
-        position: absolute;
-        display: block; 
-        margin:16*$px 0 ;
-        top:0;
-        // right:96*$px;
-        // right:42*$px;
-        right:120*$px;
-        left:116*$px;
-        background:rgba(255,255,255,.1);
-        height:64*$px; 
+    .logo-wap-r {
+        display: inline-block;
+        width: 64*$px;
+        height: 100%; 
+        background: url(../images/Logo_Gicren_96x96.png) center center / (64*$px 64*$px) no-repeat;
+    }
+
+    .seach-wap { 
+        right:104*$px;
+        left: 126*$px;
+        background: rgba(255, 255, 255, .1);
         border-radius: 64*$px;
         width: auto;
-        &:hover{
-         background:rgba(255,255,255,.2);
+        
+        &:hover {
+            background: rgba(255, 255, 255, .2);
 
-        }
+        } 
     }
-    .seach-input{
-        padding:8*$px 80*$px 8*$px 24*$px;
+
+    .seach-input {
+        padding: 8*$px 80*$px 8*$px 24*$px;
         font-size: 32*$px;
-        height:64*$px;
+        height: 64*$px;
         line-height: 48*$px;
         box-sizing: border-box;
     }
+
     .btn-search-exit {
         position: absolute;
-        right:-96*$px;
-        top:-16*$px; 
-         &:after, &:before {
+        right: -96*$px;
+        top: -16*$px;
+
+        &:after, &:before {
             content: "";
             position: absolute;
             width: 40*$px;
             left: 50%;
             height: 2px;
             background: #fff;
-        } 
+        }
+
         &:before {
             width: 48*$px;
             top: 50%;
-            transform: translate(-50%, -50%) rotate(45deg); 
+            transform: translate(-50%, -50%) rotate(45deg);
         }
 
         &:after {
@@ -151,14 +156,5 @@
             transform: translate(-50%, -50%) rotate(-45deg);
         }
     }
-     .seach-wap .btn-search {
-        position: absolute;
-        right:0; 
-        width: 64*$px;
-        height: 64*$px;
-        top:50%;
-        padding:0 16*$px 0 0;
-        transform: translate(0, -50%);
-        background-size: 42*$px 42*$px;
-    }
+
 }

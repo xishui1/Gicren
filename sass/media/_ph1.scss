@@ -54,12 +54,12 @@
         }
 
         .left-nav-bar {
-            padding: 16*$px 0;
+            // padding: 16*$px 0;
+            padding: 0;
 
-           
             .link, a {
                 font-size: 42*$px;
-                line-height: 120*$px;
+                line-height: 108*$px;
             }
 
             .fa {
@@ -88,7 +88,14 @@
 
 
         .menu-bottom-wap {
-            padding: 24*$px 0;
+            background: #202020;
+            padding :  0;
+
+            &:before {
+                // content: none;
+                left:0;
+                right: 0;
+            }
 
             .seach-wap {
                 display: none;
@@ -97,21 +104,34 @@
             .item-link {
                 font-size: 36*$px;
                 line-height: 56*$px;
+                padding:16*$px 0;
 
+                &+.item-link {
+                    &:before {
+                        
+                        top:0*$px; 
+                        bottom:0*$px;
+                        height: auto;
+ 
+
+                    }
+                }
             }
+
         }
     }
 
     .len {
         .left-nav-bar {
-             .link,   a{
-            font-size: 38*$px;
-            padding: 0 48*$px;
+            .link, a {
+                font-size: 38*$px;
+                padding: 0 48*$px;
 
-             }
-             a{
-               font-size: 32*$px;
-             }
+            }
+
+            a {
+                font-size: 32*$px;
+            }
         }
     }
 }

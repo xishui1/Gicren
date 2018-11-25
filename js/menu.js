@@ -69,7 +69,7 @@
 
             $(this.el.menuUlWap + " a").on('click', { el: this.el }, this.itemSel)
             $(".ph-head .menu-toggle ").on('click', this.menuToggle);
-            $(".ph-head .ph-head-right .btn-search ").on('click', this.phsearchShow);
+            $(".ph-head   .btn-search ").on('click', this.phsearchShow);
             $(".ph-head  .logo-wap-r").on('click', this.phsearchHide);
             $(this.el.languageWap).on('click', { _this: this }, this.languageToggle);
         }, 
