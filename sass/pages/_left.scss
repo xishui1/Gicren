@@ -22,7 +22,7 @@
 
 .menu-wap {
     top: 124*$px;
-    bottom: 124*$px;
+    bottom: 172*$px;
     right: -20*$px;
     overflow: auto;
 }
@@ -34,8 +34,8 @@
     &:before {
         position: absolute;
         top: 0; 
-        left: 16*$px;
-        right: 24*$px;
+        left: 12*$px;
+        right: 12*$px;
         content: "";
         background: #3a3a3a;
         height: 1px;
@@ -87,7 +87,7 @@
 .menu-bottom-wap .seach-wap {
     position: relative;
     border-radius: 32*$px;
-    margin: 4*$px 24*$px 0 16*$px;
+    margin: 4*$px 16*$px 0 12*$px;
     height: 24*$px;
     background: #333;
     padding: 6*$px 50*$px 6*$px 12*$px; 

@@ -53,8 +53,8 @@ li, a, button, input {
         content: "";
         position: absolute;
         top: -1px;
-        left: 16px;
-        right: 36px;
+        left: 12px;
+        right: 32px;
         height: 1px;
         background: #333; }
   .left-nav-bar .left-nav-bar-sub li:after {
@@ -112,7 +112,8 @@ li, a, button, input {
   font-size: 13px; }
 .len .left-nav-bar .fa {
   border-width: 6px 4px 0;
-  margin-top: -3px; }
+  margin-top: -3px;
+  left: 14px; }
 .len .left-nav-bar .open .fa {
   margin-top: -4px;
   border-width: 4px 0 4px 6px;
@@ -135,7 +136,7 @@ li, a, button, input {
     transform: rotate(-90deg); } }
 @keyframes sfaanimation {
   0% {
-    left: 20px;
+    left: 14px;
     margin-top: -3px;
     border-color: #459245 transparent transparent;
     border-width: 6px 4px 0;
@@ -143,7 +144,7 @@ li, a, button, input {
   50% {
     transform: rotate(-60deg); }
   100% {
-    left: 20px;
+    left: 14px;
     margin-top: -3px;
     border-color: #459245 transparent transparent;
     border-width: 6px 4px 0;
@@ -166,7 +167,7 @@ li, a, button, input {
 
 .menu-wap {
   top: 124px;
-  bottom: 124px;
+  bottom: 172px;
   right: -20px;
   overflow: auto; }
 
@@ -177,8 +178,8 @@ li, a, button, input {
   .menu-bottom-wap:before {
     position: absolute;
     top: 0;
-    left: 16px;
-    right: 24px;
+    left: 12px;
+    right: 12px;
     content: "";
     background: #3a3a3a;
     height: 1px; }
@@ -218,7 +219,7 @@ li, a, button, input {
 .menu-bottom-wap .seach-wap {
   position: relative;
   border-radius: 32px;
-  margin: 4px 24px 0 16px;
+  margin: 4px 16px 0 12px;
   height: 24px;
   background: #333;
   padding: 6px 50px 6px 12px; }

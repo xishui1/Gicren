@@ -54,8 +54,8 @@ li, a, button, input {
         content: "";
         position: absolute;
         top: -1px;
-        left: 0.21333rem;
-        right: 0.48rem;
+        left: 0.16rem;
+        right: 0.42667rem;
         height: 1px;
         background: #333; }
   .left-nav-bar .left-nav-bar-sub li:after {
@@ -116,7 +116,8 @@ li, a, button, input {
   font-size: 0.17333rem; }
 .len .left-nav-bar .fa {
   border-width: 0.08rem 0.05333rem 0;
-  margin-top: -3px; }
+  margin-top: -3px;
+  left: 0.18667rem; }
 .len .left-nav-bar .open .fa {
   margin-top: -0.05333rem;
   border-width: 0.05333rem 0 0.05333rem 0.08rem;
@@ -162,7 +163,7 @@ li, a, button, input {
             transform: rotate(-90deg); } }
 @-webkit-keyframes sfaanimation {
   0% {
-    left: 0.26667rem;
+    left: 0.18667rem;
     margin-top: -0.04rem;
     border-color: #459245 transparent transparent;
     border-width: 0.08rem 0.05333rem 0;
@@ -172,7 +173,7 @@ li, a, button, input {
     -webkit-transform: rotate(-60deg);
             transform: rotate(-60deg); }
   100% {
-    left: 0.26667rem;
+    left: 0.18667rem;
     margin-top: -0.04rem;
     border-color: #459245 transparent transparent;
     border-width: 0.08rem 0.05333rem 0;
@@ -180,7 +181,7 @@ li, a, button, input {
             transform: rotate(-90deg); } }
 @keyframes sfaanimation {
   0% {
-    left: 0.26667rem;
+    left: 0.18667rem;
     margin-top: -0.04rem;
     border-color: #459245 transparent transparent;
     border-width: 0.08rem 0.05333rem 0;
@@ -190,7 +191,7 @@ li, a, button, input {
     -webkit-transform: rotate(-60deg);
             transform: rotate(-60deg); }
   100% {
-    left: 0.26667rem;
+    left: 0.18667rem;
     margin-top: -0.04rem;
     border-color: #459245 transparent transparent;
     border-width: 0.08rem 0.05333rem 0;
@@ -214,7 +215,7 @@ li, a, button, input {
 
 .menu-wap {
   top: 1.65333rem;
-  bottom: 1.65333rem;
+  bottom: 2.29333rem;
   right: -0.26667rem;
   overflow: auto; }
 
@@ -225,8 +226,8 @@ li, a, button, input {
   .menu-bottom-wap:before {
     position: absolute;
     top: 0;
-    left: 0.21333rem;
-    right: 0.32rem;
+    left: 0.16rem;
+    right: 0.16rem;
     content: "";
     background: #3a3a3a;
     height: 1px; }
@@ -266,7 +267,7 @@ li, a, button, input {
 .menu-bottom-wap .seach-wap {
   position: relative;
   border-radius: 0.42667rem;
-  margin: 0.05333rem 0.32rem 0 0.21333rem;
+  margin: 0.05333rem 0.21333rem 0 0.16rem;
   height: 0.32rem;
   background: #333;
   padding: 0.08rem 0.66667rem 0.08rem 0.16rem; }
@@ -524,4 +525,5 @@ li, a, button, input {
   100% {
     -webkit-transform: translate(0, -50%) rotate(90deg);
             transform: translate(0, -50%) rotate(90deg); } }
+
 /*# sourceMappingURL=index.css.map */
