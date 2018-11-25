@@ -79,7 +79,7 @@
         height: 64*$px;
         right:88*$px;
         top:16*$px;
-        transition: .4s all;
+        transition:right .2s  ;
         .btn-search {
             position: absolute;
             right: 0;
@@ -113,8 +113,7 @@
         left: 126*$px;
         background: rgba(255, 255, 255, .2);
         border-radius: 64*$px;
-        width: auto;
-        
+        width: auto; 
         &:hover {
             background: rgba(255, 255, 255, .3);
 

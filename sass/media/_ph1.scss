@@ -50,7 +50,7 @@
 
         .menu-wap {
             top: 0;
-            bottom: 104*$px;
+            bottom: 98*$px;
         }
 
         .left-nav-bar {
@@ -59,9 +59,12 @@
 
             .link, a {
                 font-size: 42*$px;
-                line-height: 108*$px;
+                line-height: 110*$px;
             }
-
+            a{
+                font-size:36*$px;
+                line-height:96*$px;
+            }
             .fa {
                 right: 52*$px;
                 left: auto;
@@ -88,7 +91,7 @@
 
 
         .menu-bottom-wap {
-            background: #202020;
+            // background: #202020;
             padding :  0;
 
             &:before {
@@ -97,7 +100,7 @@
                 right: 0;
             }
 
-            .seach-wap {
+            .menu-bottom-text,.seach-wap {
                 display: none;
             }
 
@@ -117,6 +120,7 @@
                     }
                 }
             }
+             
 
         }
     }
