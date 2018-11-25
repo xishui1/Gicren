@@ -389,11 +389,11 @@ li, a, button, input {
 .ph-head-search .seach-wap {
   right: 1.38667rem;
   left: 1.68rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 0.85333rem;
   width: auto; }
   .ph-head-search .seach-wap:hover {
-    background: rgba(255, 255, 255, 0.2); }
+    background: rgba(255, 255, 255, 0.3); }
 .ph-head-search .seach-input {
   padding: 0.10667rem 1.06667rem 0.10667rem 0.32rem;
   font-size: 0.42667rem;
@@ -517,4 +517,5 @@ li, a, button, input {
   100% {
     -webkit-transform: translate(0, -50%) rotate(90deg);
             transform: translate(0, -50%) rotate(90deg); } }
+
 /*# sourceMappingURL=index.css.map */
