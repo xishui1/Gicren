@@ -1,5 +1,6 @@
-.left-nav-bar { 
-    padding: 8*$px 0; 
+.left-nav-bar {
+    padding: 8*$px 0;
+
     li {
         position: relative;
 
@@ -17,7 +18,8 @@
             }
         }
 
-    } 
+    }
+
     .left-nav-bar-sub li:after {
         background: #232325;
     }
@@ -34,19 +36,22 @@
         }
 
         .fa {
-            margin-top: -8*$px;
-            border-width: 8*$px 0 8*$px 10*$px;
-            left: 18*$px;
+            left: 20*$px;
+            margin-top: -5*$px;
+            border-width: 10*$px 8*$px 0;
+            border-color: $menu-sel transparent transparent;
             animation: faanimation .2s ease-out forwards;
         }
 
         .link:hover .fa {
-            border-color: transparent transparent transparent $menu-sel;
+            border-color: $menu-sel transparent transparent;
         }
-        &+li{
-            margin-top:0;
+
+        &+li {
+            margin-top: 0;
+
             &:after {
-                content:none; 
+                content: none;
             }
         }
 
@@ -57,7 +62,7 @@
         padding: 0 36*$px 0 50*$px;
         line-height: 60*$px;
         color: #fff;
-        font-size: 18*$px;
+        font-size: 24*$px;
         cursor: pointer;
 
         &:hover {
@@ -65,6 +70,9 @@
         }
     }
 
+    a {
+        font-size: 20px;
+    }
 
     .sel, .sel:hover {
         background: $menu-sel-bg;
@@ -73,10 +81,12 @@
 
     .link {
         position: relative;
-        transition: .1s all; 
+        transition: .1s all;
+        letter-spacing: 5*$px;
+
         &:hover {
             .fa {
-                border-color: $menu-sel transparent transparent;
+                border-color: transparent transparent transparent $menu-sel;
             }
         }
 
@@ -87,20 +97,23 @@
         left: 20*$px;
         top: 50%;
         display: block;
-        margin-top: -5*$px;
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 10*$px 8*$px 0;
-        border-color: #fff transparent transparent;
         transform-origin: center;
+        margin-top: -8*$px;
+        border-width: 8*$px 0 8*$px 10*$px;
+        left: 24*$px;
+        border-color: transparent transparent transparent #fff;
     }
 
 }
+
 // 2 level menu
 .left-nav-bar-sub {
     display: none;
 }
+
 // english
 .len {
     .left-nav-bar {
@@ -108,21 +121,28 @@
             font-size: 14px;
             padding: 0 20*$px 0 32*$px;
             white-space: nowrap;
-        } 
+        }
+
         a {
             font-size: 13*$px;
         }
 
+        .link {
+            letter-spacing: 0;
+        }
+
         .fa {
-            border-width: 6*$px 4*$px 0;
-            margin-top: -3px;
-            left:14*$px; 
-        } 
+            border-width: 4*$px 0 4*$px 6*$px;
+            margin-top: -4*$px;
+            left: 17*$px;
+        }
+
         .open {
             .fa {
-                margin-top: -4*$px;
-                border-width: 4*$px 0 4*$px 6*$px;
-                animation: sfaanimation .2s ease-out forwards;
+                margin-top: -3px;
+                left: 18*$px;
+                border-width: 6*$px 4*$px 0;
+                animation: sfaanimation .2s ease-out forwards; 
             }
         }
     }
@@ -130,44 +150,45 @@
 
 @keyframes faanimation {
     0% {
-        left: 20*$px;
-        margin-top: -5*$px;
-        border-color: $menu-sel transparent transparent;
-        border-width: 10*$px 8*$px 0;
+        left: 24*$px;
+        margin-top: -8*$px;
+        border-color: transparent transparent transparent $menu-sel;
+        border-width: 8*$px 0 8*$px 10*$px;
         transform: rotate(0deg);
     }
 
     50% {
-        transform: rotate(-60deg);
+        transform: rotate(60deg);
     }
 
     100% {
-        left: 20*$px;
-        margin-top: -5*$px;
-        border-color: $menu-sel transparent transparent;
-        border-width: 10*$px 8*$px 0;
-        transform: rotate(-90deg);
+        left: 24*$px;
+        margin-top: -8*$px;
+        border-color: transparent transparent transparent $menu-sel;
+        border-width: 8*$px 0 8*$px 10*$px;
+        transform: rotate(90deg);
     }
+
 }
 
 @keyframes sfaanimation {
     0% {
-        left: 14*$px;
-        margin-top: -3*$px;
-        border-color: $menu-sel transparent transparent;
-        border-width: 6*$px 4*$px 0;
-        transform: rotate(0deg);
+
+        margin-top: -4px;
+        left: 17*$px;
+        border-color: transparent transparent transparent $menu-sel;
+            border-width: 4*$px 0 4*$px 6*$px;
     }
 
     50% {
-        transform: rotate(-60deg);
+        transform: rotate(60deg);
     }
 
     100% {
-        left: 14*$px;
-        margin-top: -3*$px;
-        border-color: $menu-sel transparent transparent;
-        border-width: 6*$px 4*$px 0;
-        transform: rotate(-90deg);
+        left: 17*$px;
+        margin-top: -4*$px;
+        border-color: transparent transparent transparent $menu-sel;
+        border-width: 4*$px 0 4*$px 6*$px;
+        transform: rotate(90deg);
     }
 }

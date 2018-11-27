@@ -65,12 +65,13 @@ li, a, button, input {
   .left-nav-bar .open .link {
     color: #459245; }
   .left-nav-bar .open .fa {
-    margin-top: -8px;
-    border-width: 8px 0 8px 10px;
-    left: 18px;
+    left: 20px;
+    margin-top: -5px;
+    border-width: 10px 8px 0;
+    border-color: #459245 transparent transparent;
     animation: faanimation .2s ease-out forwards; }
   .left-nav-bar .open .link:hover .fa {
-    border-color: transparent transparent transparent #459245; }
+    border-color: #459245 transparent transparent; }
   .left-nav-bar .open + li {
     margin-top: 0; }
     .left-nav-bar .open + li:after {
@@ -80,30 +81,34 @@ li, a, button, input {
     padding: 0 36px 0 50px;
     line-height: 60px;
     color: #fff;
-    font-size: 18px;
+    font-size: 24px;
     cursor: pointer; }
     .left-nav-bar .link:hover, .left-nav-bar a:hover {
       color: #459245; }
+  .left-nav-bar a {
+    font-size: 20px; }
   .left-nav-bar .sel, .left-nav-bar .sel:hover {
     background: #276327;
     color: #fff; }
   .left-nav-bar .link {
     position: relative;
-    transition: .1s all; }
+    transition: .1s all;
+    letter-spacing: 5px; }
     .left-nav-bar .link:hover .fa {
-      border-color: #459245 transparent transparent; }
+      border-color: transparent transparent transparent #459245; }
   .left-nav-bar .fa {
     position: absolute;
     left: 20px;
     top: 50%;
     display: block;
-    margin-top: -5px;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 10px 8px 0;
-    border-color: #fff transparent transparent;
-    transform-origin: center; }
+    transform-origin: center;
+    margin-top: -8px;
+    border-width: 8px 0 8px 10px;
+    left: 24px;
+    border-color: transparent transparent transparent #fff; }
 
 .left-nav-bar-sub {
   display: none; }
@@ -114,45 +119,47 @@ li, a, button, input {
   white-space: nowrap; }
 .len .left-nav-bar a {
   font-size: 13px; }
+.len .left-nav-bar .link {
+  letter-spacing: 0; }
 .len .left-nav-bar .fa {
-  border-width: 6px 4px 0;
-  margin-top: -3px;
-  left: 14px; }
-.len .left-nav-bar .open .fa {
-  margin-top: -4px;
   border-width: 4px 0 4px 6px;
+  margin-top: -4px;
+  left: 17px; }
+.len .left-nav-bar .open .fa {
+  margin-top: -3px;
+  left: 18px;
+  border-width: 6px 4px 0;
   animation: sfaanimation .2s ease-out forwards; }
 
 @keyframes faanimation {
   0% {
-    left: 20px;
-    margin-top: -5px;
-    border-color: #459245 transparent transparent;
-    border-width: 10px 8px 0;
+    left: 24px;
+    margin-top: -8px;
+    border-color: transparent transparent transparent #459245;
+    border-width: 8px 0 8px 10px;
     transform: rotate(0deg); }
   50% {
-    transform: rotate(-60deg); }
+    transform: rotate(60deg); }
   100% {
-    left: 20px;
-    margin-top: -5px;
-    border-color: #459245 transparent transparent;
-    border-width: 10px 8px 0;
-    transform: rotate(-90deg); } }
+    left: 24px;
+    margin-top: -8px;
+    border-color: transparent transparent transparent #459245;
+    border-width: 8px 0 8px 10px;
+    transform: rotate(90deg); } }
 @keyframes sfaanimation {
   0% {
-    left: 14px;
-    margin-top: -3px;
-    border-color: #459245 transparent transparent;
-    border-width: 6px 4px 0;
-    transform: rotate(0deg); }
+    margin-top: -4px;
+    left: 17px;
+    border-color: transparent transparent transparent #459245;
+    border-width: 4px 0 4px 6px; }
   50% {
-    transform: rotate(-60deg); }
+    transform: rotate(60deg); }
   100% {
-    left: 14px;
-    margin-top: -3px;
-    border-color: #459245 transparent transparent;
-    border-width: 6px 4px 0;
-    transform: rotate(-90deg); } }
+    left: 17px;
+    margin-top: -4px;
+    border-color: transparent transparent transparent #459245;
+    border-width: 4px 0 4px 6px;
+    transform: rotate(90deg); } }
 .menuslide {
   position: fixed;
   width: 250px;
@@ -170,15 +177,15 @@ li, a, button, input {
   right: 0; }
 
 .menu-wap {
-  top: 124px;
-  bottom: 172px;
+  top: 125px;
+  bottom: 119px;
   right: -20px;
   overflow: auto; }
 
 .menu-bottom-wap {
   position: absolute;
   bottom: 0;
-  padding: 12px 0 24px; }
+  padding: 8px 0 12px; }
   .menu-bottom-wap:before {
     position: absolute;
     top: 0;
@@ -189,7 +196,7 @@ li, a, button, input {
     height: 1px; }
   .menu-bottom-wap .menu-bottom-text {
     color: #eee;
-    padding-top: 16px;
+    padding-top: 8px;
     font-size: 12px;
     text-align: center; }
 
@@ -205,19 +212,20 @@ li, a, button, input {
     width: 33%;
     color: #fff;
     font-size: 14px;
-    line-height: 48px;
+    line-height: 32px;
     text-align: center;
     cursor: pointer;
-    padding: 0; }
+    padding: 0;
+    letter-spacing: 1px; }
     .menu-bottom-links .item-link:hover {
       color: #459245; }
     .menu-bottom-links .item-link + .item-link:before {
       position: absolute;
       content: "";
       left: -1px;
-      top: 30%;
-      height: 40%;
-      width: 1px;
+      top: 25%;
+      height: 50%;
+      width: 2px;
       background: #3a3a3a; }
 
 .menu-bottom-wap .seach-wap {
@@ -226,7 +234,7 @@ li, a, button, input {
   margin: 4px 16px 0 12px;
   height: 24px;
   background: #333;
-  padding: 6px 50px 6px 12px; }
+  padding: 2px 50px 6px 12px; }
   .menu-bottom-wap .seach-wap:hover {
     background: #3a3a3a; }
   .menu-bottom-wap .seach-wap .btn-search {
@@ -236,7 +244,7 @@ li, a, button, input {
     border-radius: 18px;
     width: 21px;
     height: 21px;
-    padding: 8px 16px 9px;
+    padding: 6px 16px 5px;
     cursor: pointer;
     overflow: hidden; }
     .menu-bottom-wap .seach-wap .btn-search:after {

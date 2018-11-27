@@ -13,7 +13,7 @@
 
     .menu-show-wap {
         .ph-head {
-            border-bottom: 5*$px solid #232325; 
+            border-bottom: 6*$px solid #232325; 
             .menu-toggle {
                 .line {
                     display: none;
@@ -39,7 +39,7 @@
 
         .menuslide {
             display: block;
-            top: $phhead-height-wap  ;
+            top: $phhead-height-wap - 1*$px  ;
             width: 100%;
             bottom: 0;
             height: auto;
@@ -52,7 +52,7 @@
 
         .menu-wap {
             top: 0;
-            bottom: 98*$px;
+            bottom: 93*$px;
         }
 
         .left-nav-bar {
@@ -67,6 +67,7 @@
                 font-size:36*$px;
                 line-height:96*$px;
             }
+
             .fa {
                 right: 52*$px;
                 left: auto;
@@ -95,11 +96,14 @@
         .menu-bottom-wap {
             // background: #202020;
             padding :  0;
-
+            
             &:before {
                 // content: none;
+                top:-5*$px;
                 left:0;
                 right: 0;
+                height: 5px;
+                background:linear-gradient(to right,  rgba(31, 152, 172, 0.7) ,rgb(39, 99, 39) 50% ,rgb(122, 103, 32)  100% );
             }
 
             .menu-bottom-text,.seach-wap {
@@ -117,6 +121,7 @@
                         top:0*$px; 
                         bottom:0*$px;
                         height: auto;
+                        width:1px;
  
 
                     }
