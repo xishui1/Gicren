@@ -86,7 +86,7 @@ li, a, button, input {
     .left-nav-bar .link:hover, .left-nav-bar a:hover {
       color: #459245; }
   .left-nav-bar a {
-    font-size: 20px; }
+    font-size: 18px; }
   .left-nav-bar .sel, .left-nav-bar .sel:hover {
     background: #276327;
     color: #fff; }
@@ -216,7 +216,8 @@ li, a, button, input {
     text-align: center;
     cursor: pointer;
     padding: 0;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    word-spacing: 4px; }
     .menu-bottom-links .item-link:hover {
       color: #459245; }
     .menu-bottom-links .item-link + .item-link:before {
@@ -231,10 +232,10 @@ li, a, button, input {
 .menu-bottom-wap .seach-wap {
   position: relative;
   border-radius: 32px;
-  margin: 4px 16px 0 12px;
+  margin: 4px 12px 0 12px;
   height: 24px;
   background: #333;
-  padding: 2px 50px 6px 12px; }
+  padding: 4px 50px 4px 12px; }
   .menu-bottom-wap .seach-wap:hover {
     background: #3a3a3a; }
   .menu-bottom-wap .seach-wap .btn-search {
