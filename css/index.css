@@ -440,25 +440,28 @@ li, a, button, input {
   .ph-head {
     display: block; }
 
-  .menu-show-wap .ph-head .menu-toggle .line {
-    display: none; }
-  .menu-show-wap .ph-head .menu-toggle:before {
-    width: 0.64rem;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(45deg);
-            transform: translate(-50%, -50%) rotate(45deg); }
-  .menu-show-wap .ph-head .menu-toggle:after {
-    width: 0.64rem;
-    top: 50%;
-    bottom: 0;
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-            transform: translate(-50%, -50%) rotate(-45deg); }
+  .menu-show-wap .ph-head {
+    border-bottom: 0.06667rem solid #232325; }
+    .menu-show-wap .ph-head .menu-toggle .line {
+      display: none; }
+    .menu-show-wap .ph-head .menu-toggle:before {
+      width: 0.64rem;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(45deg);
+              transform: translate(-50%, -50%) rotate(45deg); }
+    .menu-show-wap .ph-head .menu-toggle:after {
+      width: 0.64rem;
+      top: 50%;
+      bottom: 0;
+      -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+              transform: translate(-50%, -50%) rotate(-45deg); }
   .menu-show-wap .menuslide {
     display: block;
-    top: 1.28rem;
+    top: 1.34667rem;
     width: 100%;
     bottom: 0;
-    height: auto; }
+    height: auto;
+    padding-top: 1px; }
     .menu-show-wap .menuslide .logo-wap {
       display: none; }
   .menu-show-wap .menu-wap {
@@ -525,5 +528,4 @@ li, a, button, input {
   100% {
     -webkit-transform: translate(0, -50%) rotate(90deg);
             transform: translate(0, -50%) rotate(90deg); } }
-
 /*# sourceMappingURL=index.css.map */

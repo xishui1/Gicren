@@ -13,6 +13,7 @@
 
     .menu-show-wap {
         .ph-head {
+            border-bottom: 5*$px solid #232325; 
             .menu-toggle {
                 .line {
                     display: none;
@@ -38,10 +39,11 @@
 
         .menuslide {
             display: block;
-            top: $phhead-height;
+            top: $phhead-height-wap  ;
             width: 100%;
             bottom: 0;
             height: auto;
+            padding-top:1px;
 
             .logo-wap {
                 display: none;

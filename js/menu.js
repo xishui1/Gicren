@@ -94,7 +94,7 @@
 
             if (!e.data.multiple) {
                 $el.find('.left-nav-bar-sub').not($next).slideUp().parent().removeClass('open');
-            };
+            }; 
         },
         itemSel: function(e) {
             var $this = $(this);
