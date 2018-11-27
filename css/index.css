@@ -73,8 +73,10 @@ li, a, button, input {
             animation: faanimation .2s ease-out forwards; }
   .left-nav-bar .open .link:hover .fa {
     border-color: transparent transparent transparent #459245; }
-  .left-nav-bar .open + li:after {
-    content: none; }
+  .left-nav-bar .open + li {
+    margin-top: 0; }
+    .left-nav-bar .open + li:after {
+      content: none; }
   .left-nav-bar .link, .left-nav-bar a {
     display: block;
     padding: 0 0.48rem 0 0.66667rem;
@@ -530,5 +532,4 @@ li, a, button, input {
   100% {
     -webkit-transform: translate(0, -50%) rotate(90deg);
             transform: translate(0, -50%) rotate(90deg); } }
-
 /*# sourceMappingURL=index.css.map */

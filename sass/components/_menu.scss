@@ -44,8 +44,9 @@
             border-color: transparent transparent transparent $menu-sel;
         }
         &+li{
+            margin-top:0;
             &:after {
-                content:none;
+                content:none; 
             }
         }
 

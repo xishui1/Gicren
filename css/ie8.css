@@ -71,8 +71,10 @@ li, a, button, input {
     animation: faanimation .2s ease-out forwards; }
   .left-nav-bar .open .link:hover .fa {
     border-color: transparent transparent transparent #459245; }
-  .left-nav-bar .open + li:after {
-    content: none; }
+  .left-nav-bar .open + li {
+    margin-top: 0; }
+    .left-nav-bar .open + li:after {
+      content: none; }
   .left-nav-bar .link, .left-nav-bar a {
     display: block;
     padding: 0 36px 0 50px;
