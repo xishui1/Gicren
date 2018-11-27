@@ -467,8 +467,8 @@ li, a, button, input {
   .menu-show-wap .left-nav-bar {
     padding: 0; }
     .menu-show-wap .left-nav-bar .link, .menu-show-wap .left-nav-bar a {
-      font-size: 0.56rem;
-      line-height: 1.46667rem; }
+      font-size: 0.58667rem;
+      line-height: 1.6rem; }
     .menu-show-wap .left-nav-bar a {
       font-size: 0.48rem;
       line-height: 1.28rem; }
@@ -525,4 +525,5 @@ li, a, button, input {
   100% {
     -webkit-transform: translate(0, -50%) rotate(90deg);
             transform: translate(0, -50%) rotate(90deg); } }
+
 /*# sourceMappingURL=index.css.map */
