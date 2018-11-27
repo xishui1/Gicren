@@ -43,6 +43,11 @@
         .link:hover .fa {
             border-color: transparent transparent transparent $menu-sel;
         }
+        &+li{
+            &:after {
+                content:none;
+            }
+        }
 
     }
 
