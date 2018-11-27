@@ -83,12 +83,13 @@ li, a, button, input {
     padding: 0 0.48rem 0 0.66667rem;
     line-height: 0.8rem;
     color: #fff;
-    font-size: 0.32rem;
+    font-size: 0.29333rem;
     cursor: pointer; }
     .left-nav-bar .link:hover, .left-nav-bar a:hover {
       color: #459245; }
   .left-nav-bar a {
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 0.64rem; }
   .left-nav-bar .sel, .left-nav-bar .sel:hover {
     background: #276327;
     color: #fff; }
