@@ -141,130 +141,150 @@
             language: "cn",
             "menu": [{
                     text: "主控器",
-                    entext: "Master controller",
+                    entext: "Main Controller",
                     pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     subMenu: [{
                         text: "Arduino衍生控制器",
-                        entext: "Arduino derived controller",
+                        entext: "Arduino Derived Controller",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }]
 
                 },
                 {
                     text: "传感器",
-                    entext: "Brushless DC Motor Controller",
+                    entext: "Sensor",
                     pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     subMenu: [{
-                        text: "惯性传感器",
-                        entext: "Brushless DC Motor Controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "视觉传感器",
-                        entext: "Arduino derived controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "视觉传感器",
-                        entext: "Arduino derived controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "听觉传感器",
-                        entext: "Arduino derived controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "触觉传感器",
-                        entext: "Arduino derived controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
                         text: "距离传感器",
-                        entext: "Arduino derived controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "按键",
-                        entext: "Arduino derived controller",
+                        entext: "Range Sensor",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }, {
                         text: "电位器",
-                        entext: "Arduino derived controller",
+                        entext: "Potentiometer",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "按键",
+                        entext: "Button",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    },{
+                        text: "距离传感器",
+                        entext: "Range Sensor",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "电位器",
+                        entext: "Potentiometer",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "按键",
+                        entext: "Button",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    },{
+                        text: "距离传感器",
+                        entext: "Range Sensor",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "电位器",
+                        entext: "Potentiometer",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "按键",
+                        entext: "Button",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    },{
+                        text: "距离传感器",
+                        entext: "Range Sensor",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "电位器",
+                        entext: "Potentiometer",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "按键",
+                        entext: "Button",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    },{
+                        text: "距离传感器",
+                        entext: "Range Sensor",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "电位器",
+                        entext: "Potentiometer",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "按键",
+                        entext: "Button",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    },{
+                        text: "距离传感器",
+                        entext: "Range Sensor",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "电位器",
+                        entext: "Potentiometer",
+                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
+                    }, {
+                        text: "按键",
+                        entext: "Button",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }]
 
                 },
                 {
                     text: "执行器",
-                    entext: "Master controller",
+                    entext: "Actuator",
                     pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     subMenu: [{
-                        text: "旋转伺服器",
-                        entext: "Arduino derived controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "直线伺服器",
-                        entext: "Arduino derived controller",
+                        text: "直流有刷电机控制器",
+                        entext: "Brushed DC Motor Controller",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }, {
                         text: "舵机控制器",
-                        entext: "Arduino derived controller",
+                        entext: "Servo Controller",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }, {
-                        text: "直流有刷电机控制器",
-                        entext: "Arduino derived controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "步进电机控制器",
-                        entext: "Arduino derived controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "LED恒流驱动器",
-                        entext: "Arduino derived controller",
+                        text: "LED控制器",
+                        entext: "LED Controller",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }]
 
                 },
                 {
                     text: "动力源",
-                    entext: "Master controller",
+                    entext: "Power",
                     pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     subMenu: [{
                         text: "锂聚合物电池",
-                        entext: "Arduino derived controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "镍氢电池",
-                        entext: "Arduino derived controller",
+                        entext: "Li-polymer Battery",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }]
 
                 },
                 {
                     text: "无线通讯",
-                    entext: "Master controller",
+                    entext: "Wireless Communication",
                     pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     subMenu: [{
                         text: "Wifi",
-                        entext: "Arduino derived controller",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "蓝牙",
-                        entext: "Arduino derived controller",
+                        entext: "Wifi",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }, {
                         text: "红外",
-                        entext: "Arduino derived controller",
+                        entext: "Infrared",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }]
 
                 },
                 {
                     text: "其余",
-                    entext: "Master controller",
+                    entext: "Else",
                     pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     subMenu: [{
                         text: "适配器",
-                        entext: "Arduino derived controller",
+                        entext: "Adapter",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }, {
                         text: "散热装置",
-                        entext: "Arduino derived controller",
+                        entext: "Heatsink",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }]
 

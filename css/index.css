@@ -66,9 +66,9 @@ li, a, button, input {
   .left-nav-bar .open .link {
     color: #459245; }
   .left-nav-bar .open .fa {
-    left: 0.26667rem;
-    margin-top: -0.06667rem;
-    border-width: 0.13333rem 0.10667rem 0;
+    left: 0.24rem;
+    margin-top: -0.05333rem;
+    border-width: 0.10667rem 0.08rem 0;
     border-color: #459245 transparent transparent;
     -webkit-animation: faanimation .2s ease-out forwards;
             animation: faanimation .2s ease-out forwards; }
@@ -80,10 +80,10 @@ li, a, button, input {
       content: none; }
   .left-nav-bar .link, .left-nav-bar a {
     display: block;
-    padding: 0 0.48rem 0 0.66667rem;
+    padding: 0 0.48rem 0 0.53333rem;
     line-height: 0.8rem;
     color: #fff;
-    font-size: 0.29333rem;
+    font-size: 0.28rem;
     cursor: pointer; }
     .left-nav-bar .link:hover, .left-nav-bar a:hover {
       color: #459245; }
@@ -110,68 +110,57 @@ li, a, button, input {
     border-style: solid;
     -webkit-transform-origin: center;
             transform-origin: center;
-    margin-top: -0.10667rem;
-    border-width: 0.10667rem 0 0.10667rem 0.13333rem;
-    left: 0.32rem;
+    margin-top: -0.08rem;
+    border-width: 0.08rem 0 0.08rem 0.10667rem;
+    left: 0.26667rem;
     border-color: transparent transparent transparent #fff; }
 
 .left-nav-bar-sub {
   display: none; }
 
 .len .left-nav-bar .link, .len .left-nav-bar a {
-  font-size: 14px;
-  padding: 0 0.26667rem 0 0.42667rem;
   white-space: nowrap; }
 .len .left-nav-bar a {
-  font-size: 0.17333rem; }
+  font-size: 0.18667rem; }
 .len .left-nav-bar .link {
-  letter-spacing: 0; }
-.len .left-nav-bar .fa {
-  border-width: 0.05333rem 0 0.05333rem 0.08rem;
-  margin-top: -0.05333rem;
-  left: 0.22667rem; }
-.len .left-nav-bar .open .fa {
-  margin-top: -3px;
-  left: 0.24rem;
-  border-width: 0.08rem 0.05333rem 0;
-  -webkit-animation: sfaanimation .2s ease-out forwards;
-          animation: sfaanimation .2s ease-out forwards; }
+  letter-spacing: 0;
+  font-size: 16px; }
 
 @-webkit-keyframes faanimation {
   0% {
-    left: 0.32rem;
-    margin-top: -0.10667rem;
+    left: 0.26667rem;
+    margin-top: -0.08rem;
     border-color: transparent transparent transparent #459245;
-    border-width: 0.10667rem 0 0.10667rem 0.13333rem;
+    border-width: 0.08rem 0 0.08rem 0.10667rem;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
   50% {
     -webkit-transform: rotate(60deg);
             transform: rotate(60deg); }
   100% {
-    left: 0.32rem;
-    margin-top: -0.10667rem;
+    left: 0.26667rem;
+    margin-top: -0.08rem;
     border-color: transparent transparent transparent #459245;
-    border-width: 0.10667rem 0 0.10667rem 0.13333rem;
+    border-width: 0.08rem 0 0.08rem 0.10667rem;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); } }
 
 @keyframes faanimation {
   0% {
-    left: 0.32rem;
-    margin-top: -0.10667rem;
+    left: 0.26667rem;
+    margin-top: -0.08rem;
     border-color: transparent transparent transparent #459245;
-    border-width: 0.10667rem 0 0.10667rem 0.13333rem;
+    border-width: 0.08rem 0 0.08rem 0.10667rem;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
   50% {
     -webkit-transform: rotate(60deg);
             transform: rotate(60deg); }
   100% {
-    left: 0.32rem;
-    margin-top: -0.10667rem;
+    left: 0.26667rem;
+    margin-top: -0.08rem;
     border-color: transparent transparent transparent #459245;
-    border-width: 0.10667rem 0 0.10667rem 0.13333rem;
+    border-width: 0.08rem 0 0.08rem 0.10667rem;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); } }
 @-webkit-keyframes sfaanimation {
@@ -334,10 +323,9 @@ li, a, button, input {
   padding: 0 0.42667rem; }
   .ph-head .logo-wap {
     display: inline-block;
-    background: url(../images/PIC-GicrenLogo.png) no-repeat 0 0;
-    width: 2.33333rem;
-    height: 0.81333rem;
-    background-size: 2.33333rem 1.04rem;
+    background: url(../images/Logo_Gicren_A.svg) no-repeat 0 0/2.32rem 1.69333rem;
+    width: 2.32rem;
+    height: 0.8rem;
     margin-top: 0.24rem; }
   .ph-head .ph-head-right {
     position: absolute;
@@ -395,14 +383,17 @@ li, a, button, input {
       background-size: 0.56rem 0.56rem;
       -webkit-transition: 0.1 all;
       transition: 0.1 all; }
+  .ph-head .seach-input {
+    visibility: hidden; }
 
 .ph-head-search .logo-wap {
   display: none; }
 .ph-head-search .logo-wap-r {
   display: inline-block;
   width: 0.85333rem;
-  height: 100%;
-  background: url(../images/Logo_Gicren_96x96.png) center center/0.85333rem 0.85333rem no-repeat; }
+  height: 0.85333rem;
+  background: url(../images/Logo_Gicren_A.svg) 0 -0.84rem/2.32rem 1.69333rem no-repeat;
+  margin: 0.21333rem 0; }
 .ph-head-search .seach-wap {
   right: 1.38667rem;
   left: 1.68rem;
@@ -417,7 +408,8 @@ li, a, button, input {
   height: 0.85333rem;
   line-height: 0.64rem;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  visibility: visible; }
 .ph-head-search .btn-search-exit {
   position: absolute;
   right: -1.28rem;
@@ -452,7 +444,7 @@ li, a, button, input {
     display: block; }
 
   .menu-show-wap .ph-head {
-    border-bottom: 0.08rem solid #232325; }
+    border-bottom: 0.13333rem solid #232325; }
     .menu-show-wap .ph-head .menu-toggle .line {
       display: none; }
     .menu-show-wap .ph-head .menu-toggle:before {
@@ -468,7 +460,7 @@ li, a, button, input {
               transform: translate(-50%, -50%) rotate(-45deg); }
   .menu-show-wap .menuslide {
     display: block;
-    top: 1.34667rem;
+    top: 1.4rem;
     width: 100%;
     bottom: 0;
     height: auto;
@@ -477,7 +469,7 @@ li, a, button, input {
       display: none; }
   .menu-show-wap .menu-wap {
     top: 0;
-    bottom: 1.24rem; }
+    bottom: 1.2rem; }
   .menu-show-wap .left-nav-bar {
     padding: 0; }
     .menu-show-wap .left-nav-bar .link, .menu-show-wap .left-nav-bar a {
@@ -510,9 +502,8 @@ li, a, button, input {
       top: -0.06667rem;
       left: 0;
       right: 0;
-      height: 5px;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(31, 152, 172, 0.7)), color-stop(50%, #276327), to(#7a6720));
-      background: linear-gradient(to right, rgba(31, 152, 172, 0.7), #276327 50%, #7a6720 100%); }
+      height: 0.06667rem;
+      background: #666; }
     .menu-show-wap .menu-bottom-wap .menu-bottom-text, .menu-show-wap .menu-bottom-wap .seach-wap {
       display: none; }
     .menu-show-wap .menu-bottom-wap .item-link {
@@ -523,7 +514,9 @@ li, a, button, input {
         top: 0rem;
         bottom: 0rem;
         height: auto;
-        width: 1px; }
+        left: -0.02667rem;
+        width: 0.06667rem;
+        background: #666; }
 
   .len .left-nav-bar .link, .len .left-nav-bar a {
     font-size: 0.50667rem;
@@ -544,4 +537,5 @@ li, a, button, input {
   100% {
     -webkit-transform: translate(0, -50%) rotate(90deg);
             transform: translate(0, -50%) rotate(90deg); } }
+
 /*# sourceMappingURL=index.css.map */

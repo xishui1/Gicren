@@ -36,9 +36,9 @@
         }
 
         .fa {
-            left: 20*$px;
-            margin-top: -5*$px;
-            border-width: 10*$px 8*$px 0;
+            left: 18*$px;
+            margin-top: -4*$px;
+            border-width: 8*$px 6*$px 0;
             border-color: $menu-sel transparent transparent;
             animation: faanimation .2s ease-out forwards;
         }
@@ -59,10 +59,10 @@
 
     .link, a {
         display: block;
-        padding: 0 36*$px 0 50*$px;
+        padding: 0 36*$px 0 40*$px;
         line-height: 60*$px;
         color: #fff;
-        font-size: 22*$px;
+        font-size: 21*$px;
         cursor: pointer;
 
         &:hover {
@@ -102,9 +102,9 @@
         height: 0;
         border-style: solid;
         transform-origin: center;
-        margin-top: -8*$px;
-        border-width: 8*$px 0 8*$px 10*$px;
-        left: 24*$px;
+        margin-top: -6*$px;
+        border-width: 6*$px 0 6*$px 8*$px;
+        left: 20*$px;
         border-color: transparent transparent transparent #fff;
     }
 
@@ -119,42 +119,42 @@
 .len {
     .left-nav-bar {
         .link, a {
-            font-size: 14px;
-            padding: 0 20*$px 0 32*$px;
+            // padding: 0 20*$px 0 32*$px;
             white-space: nowrap;
         }
 
         a {
-            font-size: 13*$px;
+            font-size: 14*$px;
         }
 
         .link {
             letter-spacing: 0;
+            font-size: 16px;
         }
 
-        .fa {
-            border-width: 4*$px 0 4*$px 6*$px;
-            margin-top: -4*$px;
-            left: 17*$px;
-        }
+        // .fa {
+        //     border-width: 4*$px 0 4*$px 6*$px;
+        //     margin-top: -4*$px;
+        //     left: 17*$px;
+        // }
 
         .open {
-            .fa {
-                margin-top: -3px;
-                left: 18*$px;
-                border-width: 6*$px 4*$px 0;
-                animation: sfaanimation .2s ease-out forwards; 
-            }
+            // .fa {
+            //     margin-top: -3px;
+            //     left: 18*$px;
+            //     border-width: 6*$px 4*$px 0;
+            //     animation: sfaanimation .2s ease-out forwards; 
+            // }
         }
     }
 }
 
 @keyframes faanimation {
     0% {
-        left: 24*$px;
-        margin-top: -8*$px;
+        left: 20*$px;
+        margin-top: -6*$px;
         border-color: transparent transparent transparent $menu-sel;
-        border-width: 8*$px 0 8*$px 10*$px;
+        border-width: 6*$px 0 6*$px 8*$px;
         transform: rotate(0deg);
     }
 
@@ -163,10 +163,10 @@
     }
 
     100% {
-        left: 24*$px;
-        margin-top: -8*$px;
+        left: 20*$px;
+        margin-top: -6*$px;
         border-color: transparent transparent transparent $menu-sel;
-        border-width: 8*$px 0 8*$px 10*$px;
+        border-width: 6*$px 0 6*$px 8*$px;
         transform: rotate(90deg);
     }
 

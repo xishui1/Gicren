@@ -11,11 +11,10 @@
 
     .logo-wap {
         display: inline-block;
-        background: url(../images/PIC-GicrenLogo.png) no-repeat 0 0;
-        width: 175*$px;
-        height: 61*$px;
-        background-size: 175*$px 78*$px;
-        margin-top: 18*$px;
+        background: url(../images/Logo_Gicren_A.svg) no-repeat 0  0 / (174*$px 127*$px);
+        width: 174*$px;
+        height: 60*$px; 
+        margin-top:(96-60)/2*$px;
 
     } 
     .ph-head-right {
@@ -90,6 +89,9 @@
             transition: .1 all ;
         }
     }
+        .seach-input{
+            visibility: hidden;
+        }
 }
 // serch head
 .ph-head-search {
@@ -102,8 +104,9 @@
     .logo-wap-r {
         display: inline-block;
         width: 64*$px;
-        height: 100%; 
-        background: url(../images/Logo_Gicren_96x96.png) center center / (64*$px 64*$px) no-repeat;
+        height: 64*$px; 
+        background: url(../images/Logo_Gicren_A.svg) 0 -63*$px / (174*$px 127*$px) no-repeat;
+        margin:(96-64)/ 2*$px 0;
     }
 
     .seach-wap { 
@@ -124,6 +127,7 @@
         height: 64*$px;
         line-height: 48*$px;
         box-sizing: border-box;
+        visibility: visible;
     }
 
     .btn-search-exit {

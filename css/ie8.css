@@ -65,9 +65,9 @@ li, a, button, input {
   .left-nav-bar .open .link {
     color: #459245; }
   .left-nav-bar .open .fa {
-    left: 20px;
-    margin-top: -5px;
-    border-width: 10px 8px 0;
+    left: 18px;
+    margin-top: -4px;
+    border-width: 8px 6px 0;
     border-color: #459245 transparent transparent;
     animation: faanimation .2s ease-out forwards; }
   .left-nav-bar .open .link:hover .fa {
@@ -78,10 +78,10 @@ li, a, button, input {
       content: none; }
   .left-nav-bar .link, .left-nav-bar a {
     display: block;
-    padding: 0 36px 0 50px;
+    padding: 0 36px 0 40px;
     line-height: 60px;
     color: #fff;
-    font-size: 22px;
+    font-size: 21px;
     cursor: pointer; }
     .left-nav-bar .link:hover, .left-nav-bar a:hover {
       color: #459245; }
@@ -106,46 +106,36 @@ li, a, button, input {
     height: 0;
     border-style: solid;
     transform-origin: center;
-    margin-top: -8px;
-    border-width: 8px 0 8px 10px;
-    left: 24px;
+    margin-top: -6px;
+    border-width: 6px 0 6px 8px;
+    left: 20px;
     border-color: transparent transparent transparent #fff; }
 
 .left-nav-bar-sub {
   display: none; }
 
 .len .left-nav-bar .link, .len .left-nav-bar a {
-  font-size: 14px;
-  padding: 0 20px 0 32px;
   white-space: nowrap; }
 .len .left-nav-bar a {
-  font-size: 13px; }
+  font-size: 14px; }
 .len .left-nav-bar .link {
-  letter-spacing: 0; }
-.len .left-nav-bar .fa {
-  border-width: 4px 0 4px 6px;
-  margin-top: -4px;
-  left: 17px; }
-.len .left-nav-bar .open .fa {
-  margin-top: -3px;
-  left: 18px;
-  border-width: 6px 4px 0;
-  animation: sfaanimation .2s ease-out forwards; }
+  letter-spacing: 0;
+  font-size: 16px; }
 
 @keyframes faanimation {
   0% {
-    left: 24px;
-    margin-top: -8px;
+    left: 20px;
+    margin-top: -6px;
     border-color: transparent transparent transparent #459245;
-    border-width: 8px 0 8px 10px;
+    border-width: 6px 0 6px 8px;
     transform: rotate(0deg); }
   50% {
     transform: rotate(60deg); }
   100% {
-    left: 24px;
-    margin-top: -8px;
+    left: 20px;
+    margin-top: -6px;
     border-color: transparent transparent transparent #459245;
-    border-width: 8px 0 8px 10px;
+    border-width: 6px 0 6px 8px;
     transform: rotate(90deg); } }
 @keyframes sfaanimation {
   0% {
