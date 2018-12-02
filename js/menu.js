@@ -29,24 +29,22 @@
             this.dataMenu = data.menu;
             this.drawMenu(data.menu);
             this.bindEvent();
-            this.data=data.menu;
-            if(  data.language=="en"){
+            this.data = data.menu;
+            if (data.language == "en") {
                 $("body").addClass("len")
-            }
-            else{
+            } else {
 
                 $("body").removeClass("len")
             }
         },
-        redraw:function(){
-              this.drawMenu(this.data); 
-              if(  this.language=="en"){
+        redraw: function() {
+            this.drawMenu(this.data);
+            if (this.language == "en") {
                 $("body").addClass("len")
-            }
-            else{
+            } else {
 
                 $("body").removeClass("len")
-            }  
+            }
         },
         drawMenu: function(data) {
             var $con = $(this.el.menuUlWap),
@@ -76,14 +74,14 @@
         },
         bindEvent: function() {
 
-            $(this.el.menuUlWap  ).on('click', " .link", { el: this.el, multiple: this.multiple }, this.menuOpenToggle);
+            $(this.el.menuUlWap).on('click', " .link", { el: this.el, multiple: this.multiple }, this.menuOpenToggle);
 
-            $(this.el.menuUlWap ).on('click', "a",  { el: this.el }, this.itemSel)
-            $(".ph-head ").on('click',".menu-toggle " ,this.menuToggle);
-            $(".ph-head   ").on('click',".btn-search", this.phsearchShow);
-            $(".ph-head").on('click', ".logo-wap-r",this.phsearchHide);
+            $(this.el.menuUlWap).on('click', "a", { el: this.el }, this.itemSel)
+            $(".ph-head ").on('click', ".menu-toggle ", this.menuToggle);
+            $(".ph-head   ").on('click', ".btn-search", this.phsearchShow);
+            $(".ph-head").on('click', ".logo-wap-r", this.phsearchHide);
             $(this.el.languageWap).on('click', { _this: this }, this.languageToggle);
-        }, 
+        },
         menuOpenToggle: function(e) {
             var $el = $(e.data.el.menuUlWap),
                 $this = $(this),
@@ -94,7 +92,7 @@
 
             if (!e.data.multiple) {
                 $el.find('.left-nav-bar-sub').not($next).slideUp().parent().removeClass('open');
-            }; 
+            };
         },
         itemSel: function(e) {
             var $this = $(this);
@@ -116,19 +114,19 @@
         languageToggle: function(e) {
             var $el = $(e.target),
                 _this = e.data._this;
-            var language=$el.attr("language");
-            switch(language) {
+            var language = $el.attr("language");
+            switch (language) {
                 case "en":
-                _this.language ="en";
-                    $el.attr("language","cn");
+                    _this.language = "en";
+                    $el.attr("language", "cn");
 
                     break;
                 case "cn":
-                _this.language ="cn";     
-                $el.attr("language","en");
+                    _this.language = "cn";
+                    $el.attr("language", "en");
                     break;
             }
-                _this.redraw();
+            _this.redraw();
 
         }
 
@@ -166,7 +164,7 @@
                         text: "按键",
                         entext: "Button",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    },{
+                    }, {
                         text: "距离传感器",
                         entext: "Range Sensor",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
@@ -178,7 +176,7 @@
                         text: "按键",
                         entext: "Button",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    },{
+                    }, {
                         text: "距离传感器",
                         entext: "Range Sensor",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
@@ -190,7 +188,7 @@
                         text: "按键",
                         entext: "Button",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    },{
+                    }, {
                         text: "距离传感器",
                         entext: "Range Sensor",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
@@ -202,7 +200,7 @@
                         text: "按键",
                         entext: "Button",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    },{
+                    }, {
                         text: "距离传感器",
                         entext: "Range Sensor",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
@@ -214,7 +212,7 @@
                         text: "按键",
                         entext: "Button",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    },{
+                    }, {
                         text: "距离传感器",
                         entext: "Range Sensor",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
@@ -292,5 +290,18 @@
             ]
         };
         new menuslide(menudata);
+        $(document).ready(function() {
+
+            function stopScrolling(touchEvent) {
+
+                touchEvent.preventDefault();
+
+            }
+
+            document.addEventListener('touchstart', stopScrolling, false);
+
+            document.addEventListener('touchmove', stopScrolling, false);
+
+        });
     })
 }())
