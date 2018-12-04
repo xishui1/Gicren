@@ -1,9 +1,9 @@
 .ph-head {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-
+    z-index:999;
     display: none;
     height: $phhead-height;
     background: $theme-darken;
@@ -11,10 +11,11 @@
 
     .logo-wap {
         display: inline-block;
-        background: url(../images/Logo_Gicren_A.svg) no-repeat 0  0 / (174*$px 127*$px);
-        width: 174*$px;
-        height: 60*$px; 
-        margin-top:(96-60)/2*$px;
+        background: url(../images/Logo_Gicren_A.svg) no-repeat 1*$px  1*$px / (174*$px 127*$px);
+        width: 176*$px;
+        height: 62*$px; 
+        margin-top:(96-62)/2*$px;
+        position: relative;
 
     } 
     .ph-head-right {
@@ -63,8 +64,7 @@
         }
     }
 
-    .btn-search {
-
+    .btn-search { 
         background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMzAgMzAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I2ZmZjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNSAyOS41Yy0uNi42LTEuNi42LTIuMiAwTDIwIDIyLjJjLTQuOSAzLjgtMTEuOSAzLjQtMTYuNC0xLTQuOS00LjktNC45LTEyLjcgMC0xNy42czEyLjctNC45IDE3LjYgMGM0LjUgNC41IDQuOCAxMS41IDEgMTYuNGw3LjMgNy4zYy43LjcuNyAxLjYgMCAyLjJ6TTE5IDUuOGMtMy42LTMuNi05LjUtMy42LTEzLjIgMHMtMy42IDkuNSAwIDEzLjJjMy42IDMuNiA5LjUgMy42IDEzLjIgMCAzLjYtMy43IDMuNi05LjYgMC0xMy4yeiIvPjwvc3ZnPg==) center no-repeat;
         background-size: 48*$px 48*$px;
     }
@@ -80,13 +80,13 @@
         .btn-search {
             position: absolute;
             right: 0;
-            width: 42*$px;
-            height: 42*$px;
+            width: 44*$px;
+            height: 44*$px;
             top: 50%;
             padding: 0 16*$px  ;
             transform: translate(0, -50%);
             background-size: 42*$px 42*$px;
-            transition: .1 all ;
+            transition: .1s all ;
         }
     }
         .seach-input{
@@ -103,10 +103,10 @@
 
     .logo-wap-r {
         display: inline-block;
-        width: 64*$px;
-        height: 64*$px; 
-        background: url(../images/Logo_Gicren_A.svg) 0 -63*$px / (174*$px 127*$px) no-repeat;
-        margin:(96-64)/ 2*$px 0;
+        width: 66*$px;
+        height: 66*$px; 
+        background: url(../images/Logo_Gicren_A.svg) 1*$px -62*$px / (174*$px 127*$px) no-repeat;
+        margin:(96-66)/ 2*$px 0;
     }
 
     .seach-wap { 

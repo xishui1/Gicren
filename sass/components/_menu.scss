@@ -28,7 +28,7 @@
         .left-nav-bar-sub {
             display: block;
             // background: #000c17;
-            background: #333;
+            transition: .2s background;
         }
 
         .link {
@@ -113,6 +113,7 @@
 // 2 level menu
 .left-nav-bar-sub {
     display: none;
+    background: #333;
 }
 
 // english

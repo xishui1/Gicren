@@ -43,6 +43,11 @@ li, a, button, input {
 .minwh {
   min-width: 1024px; }
 
+.mainpage {
+  position: relative;
+  height: 100%;
+  overflow: hidden; }
+
 .left-nav-bar {
   padding: 8px 0; }
   .left-nav-bar li {
@@ -61,7 +66,7 @@ li, a, button, input {
     background: #232325; }
   .left-nav-bar .open .left-nav-bar-sub {
     display: block;
-    background: #333; }
+    transition: .2s background; }
   .left-nav-bar .open .link {
     color: #459245; }
   .left-nav-bar .open .fa {
@@ -112,7 +117,8 @@ li, a, button, input {
     border-color: transparent transparent transparent #fff; }
 
 .left-nav-bar-sub {
-  display: none; }
+  display: none;
+  background: #333; }
 
 .len .left-nav-bar .link, .len .left-nav-bar a {
   white-space: nowrap; }

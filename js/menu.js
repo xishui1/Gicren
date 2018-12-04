@@ -63,7 +63,7 @@
                 html.push("<ul class=\"left-nav-bar-sub\">")
             }
             for (var i = 0; i < l; i++) {
-                html.push("<li><a href=\"#\"  pdf=\"" + data[i].pdf + "\">" + this.getText(data[i]) + "</a></li>");
+                html.push("<li><a href=\"javascript:void(0)\"  pdf=\"" + data[i].pdf + "\">" + this.getText(data[i]) + "</a></li>");
             }
             if (l > 0) {
                 html.push("</ul>")
@@ -85,14 +85,13 @@
         menuOpenToggle: function(e) {
             var $el = $(e.data.el.menuUlWap),
                 $this = $(this),
-                $next = $this.next();
-
+                $next = $this.next(); 
             $next.slideToggle();
-            $this.parent().toggleClass('open');
-
+            $this.parent().toggleClass('open'); 
             if (!e.data.multiple) {
                 $el.find('.left-nav-bar-sub').not($next).slideUp().parent().removeClass('open');
-            };
+            }; 
+
         },
         itemSel: function(e) {
             var $this = $(this);
@@ -168,62 +167,6 @@
                         text: "距离传感器",
                         entext: "Range Sensor",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "电位器",
-                        entext: "Potentiometer",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "按键",
-                        entext: "Button",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "距离传感器",
-                        entext: "Range Sensor",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "电位器",
-                        entext: "Potentiometer",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "按键",
-                        entext: "Button",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "距离传感器",
-                        entext: "Range Sensor",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "电位器",
-                        entext: "Potentiometer",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "按键",
-                        entext: "Button",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "距离传感器",
-                        entext: "Range Sensor",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "电位器",
-                        entext: "Potentiometer",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "按键",
-                        entext: "Button",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "距离传感器",
-                        entext: "Range Sensor",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "电位器",
-                        entext: "Potentiometer",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "按键",
-                        entext: "Button",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }]
 
                 },
@@ -290,18 +233,24 @@
             ]
         };
         new menuslide(menudata);
-        $(document).ready(function() {
 
-            function stopScrolling(touchEvent) {
 
-                touchEvent.preventDefault();
+        var touch3 = function() {
+
+            window.onscroll = function() { 
+                var top = document.documentElement.scrollTop || document.body.scrollTop;
+
+                if (top <= 0) {
+
+                    document.body.scrollTop = 0;
+
+                }
 
             }
 
-            document.addEventListener('touchstart', stopScrolling, false);
-
-            document.addEventListener('touchmove', stopScrolling, false);
-
-        });
+        }
+        if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            // touch3();
+        }
     })
 }())

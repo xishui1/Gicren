@@ -40,3 +40,10 @@ li,a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
 .minwh{
 	min-width: 1024px;
 }
+.mainpage{
+	position: relative;
+    height: 100%; 	
+    overflow: hidden;
+   //  overflow:scroll; 
+   // -webkit-overflow-scrolling: touch; 
+}

@@ -44,6 +44,11 @@ li, a, button, input {
 .minwh {
   min-width: 1024px; }
 
+.mainpage {
+  position: relative;
+  height: 100%;
+  overflow: hidden; }
+
 .left-nav-bar {
   padding: 0.10667rem 0; }
   .left-nav-bar li {
@@ -62,7 +67,8 @@ li, a, button, input {
     background: #232325; }
   .left-nav-bar .open .left-nav-bar-sub {
     display: block;
-    background: #333; }
+    -webkit-transition: .2s background;
+    transition: .2s background; }
   .left-nav-bar .open .link {
     color: #459245; }
   .left-nav-bar .open .fa {
@@ -116,7 +122,8 @@ li, a, button, input {
     border-color: transparent transparent transparent #fff; }
 
 .left-nav-bar-sub {
-  display: none; }
+  display: none;
+  background: #333; }
 
 .len .left-nav-bar .link, .len .left-nav-bar a {
   white-space: nowrap; }
@@ -313,20 +320,22 @@ li, a, button, input {
     background: #fff; }
 
 .ph-head {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
   display: none;
   height: 1.28rem;
   background: #276327;
   padding: 0 0.42667rem; }
   .ph-head .logo-wap {
     display: inline-block;
-    background: url(../images/Logo_Gicren_A.svg) no-repeat 0 0/2.32rem 1.69333rem;
-    width: 2.32rem;
-    height: 0.8rem;
-    margin-top: 0.24rem; }
+    background: url(../images/Logo_Gicren_A.svg) no-repeat 0.01333rem 0.01333rem/2.32rem 1.69333rem;
+    width: 2.34667rem;
+    height: 0.82667rem;
+    margin-top: 0.22667rem;
+    position: relative; }
   .ph-head .ph-head-right {
     position: absolute;
     right: 0.21333rem;
@@ -374,15 +383,15 @@ li, a, button, input {
     .ph-head .seach-wap .btn-search {
       position: absolute;
       right: 0;
-      width: 0.56rem;
-      height: 0.56rem;
+      width: 0.58667rem;
+      height: 0.58667rem;
       top: 50%;
       padding: 0 0.21333rem;
       -webkit-transform: translate(0, -50%);
               transform: translate(0, -50%);
       background-size: 0.56rem 0.56rem;
-      -webkit-transition: 0.1 all;
-      transition: 0.1 all; }
+      -webkit-transition: 0.1s all;
+      transition: 0.1s all; }
   .ph-head .seach-input {
     visibility: hidden; }
 
@@ -390,10 +399,10 @@ li, a, button, input {
   display: none; }
 .ph-head-search .logo-wap-r {
   display: inline-block;
-  width: 0.85333rem;
-  height: 0.85333rem;
-  background: url(../images/Logo_Gicren_A.svg) 0 -0.84rem/2.32rem 1.69333rem no-repeat;
-  margin: 0.21333rem 0; }
+  width: 0.88rem;
+  height: 0.88rem;
+  background: url(../images/Logo_Gicren_A.svg) 0.01333rem -0.82667rem/2.32rem 1.69333rem no-repeat;
+  margin: 0.2rem 0; }
 .ph-head-search .seach-wap {
   right: 1.38667rem;
   left: 1.68rem;
