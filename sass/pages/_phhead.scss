@@ -1,17 +1,12 @@
 .ph-head {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index:999;
+    
     display: none;
     height: $phhead-height;
     background: $theme-darken;
-    padding: 0 32*$px; 
-
+    padding: 0 32*$px;  
     .logo-wap {
         display: inline-block;
-        background: url(../images/Logo_Gicren_A.svg) no-repeat 1*$px  1*$px / (174*$px 127*$px);
+        background: url(../images/Logo_Gicren_A.svg) no-repeat 1*$px  0*$px / (174*$px 136*$px);
         width: 176*$px;
         height: 62*$px; 
         margin-top:(96-62)/2*$px;
@@ -105,7 +100,7 @@
         display: inline-block;
         width: 66*$px;
         height: 66*$px; 
-        background: url(../images/Logo_Gicren_A.svg) 1*$px -62*$px / (174*$px 127*$px) no-repeat;
+        background: url(../images/Logo_Gicren_A.svg) 1*$px -69*$px / (174*$px 136*$px) no-repeat;
         margin:(96-66)/ 2*$px 0;
     }
 

@@ -49,7 +49,8 @@ li, a, button, input {
   overflow: hidden; }
 
 .left-nav-bar {
-  padding: 8px 0; }
+  padding: 0 0 8px 0;
+  width: 259px; }
   .left-nav-bar li {
     position: relative; }
     .left-nav-bar li + li {
@@ -58,8 +59,8 @@ li, a, button, input {
         content: "";
         position: absolute;
         top: -1px;
-        left: 12px;
-        right: 32px;
+        left: 8px;
+        right: 28px;
         height: 1px;
         background: #333; }
   .left-nav-bar .left-nav-bar-sub li:after {
@@ -70,7 +71,7 @@ li, a, button, input {
   .left-nav-bar .open .link {
     color: #459245; }
   .left-nav-bar .open .fa {
-    left: 18px;
+    left: 12px;
     margin-top: -4px;
     border-width: 8px 6px 0;
     border-color: #459245 transparent transparent;
@@ -83,28 +84,28 @@ li, a, button, input {
       content: none; }
   .left-nav-bar .link, .left-nav-bar a {
     display: block;
-    padding: 0 36px 0 40px;
-    line-height: 60px;
+    padding: 0 3px 0 32px;
+    line-height: 48px;
     color: #fff;
-    font-size: 21px;
+    font-size: 19px;
     cursor: pointer; }
     .left-nav-bar .link:hover, .left-nav-bar a:hover {
       color: #459245; }
   .left-nav-bar a {
-    font-size: 18px;
-    line-height: 48px; }
+    font-size: 16px;
+    line-height: 36px; }
   .left-nav-bar .sel, .left-nav-bar .sel:hover {
     background: #276327;
     color: #fff; }
   .left-nav-bar .link {
     position: relative;
     transition: .1s all;
-    letter-spacing: 5px; }
+    letter-spacing: 2px; }
     .left-nav-bar .link:hover .fa {
       border-color: transparent transparent transparent #459245; }
   .left-nav-bar .fa {
     position: absolute;
-    left: 20px;
+    left: 14px;
     top: 50%;
     display: block;
     width: 0;
@@ -113,7 +114,6 @@ li, a, button, input {
     transform-origin: center;
     margin-top: -6px;
     border-width: 6px 0 6px 8px;
-    left: 20px;
     border-color: transparent transparent transparent #fff; }
 
 .left-nav-bar-sub {
@@ -125,12 +125,11 @@ li, a, button, input {
 .len .left-nav-bar a {
   font-size: 14px; }
 .len .left-nav-bar .link {
-  letter-spacing: 0;
-  font-size: 16px; }
+  letter-spacing: 0; }
 
 @keyframes faanimation {
   0% {
-    left: 20px;
+    left: 14px;
     margin-top: -6px;
     border-color: transparent transparent transparent #459245;
     border-width: 6px 0 6px 8px;
@@ -138,7 +137,7 @@ li, a, button, input {
   50% {
     transform: rotate(60deg); }
   100% {
-    left: 20px;
+    left: 14px;
     margin-top: -6px;
     border-color: transparent transparent transparent #459245;
     border-width: 6px 0 6px 8px;
@@ -159,14 +158,17 @@ li, a, button, input {
     transform: rotate(90deg); } }
 .menuslide {
   position: fixed;
-  width: 250px;
+  width: 239px;
   height: 100%;
   background: #232325;
   overflow: hidden; }
   .menuslide .logo-wap {
     display: block;
     height: 120px;
-    background: url(../images/PIC-GicrenLogo.png) center no-repeat #276327; }
+    background: url(../images/Logo_Gicren_CN.png) center no-repeat #276327; }
+
+.len .menuslide .logo-wap {
+  background-image: url(../images/Logo_Gicren_EN.png); }
 
 .menuslide .logo-wap, .menu-wap, .menuslide .menu-bottom-wap {
   position: absolute;
@@ -175,25 +177,26 @@ li, a, button, input {
 
 .menu-wap {
   top: 125px;
-  bottom: 119px;
+  bottom: 91px;
   right: -20px;
-  overflow: auto; }
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 .menu-bottom-wap {
   position: absolute;
   bottom: 0;
-  padding: 8px 0 12px; }
+  padding: 5px 0 0; }
   .menu-bottom-wap:before {
     position: absolute;
     top: 0;
-    left: 12px;
-    right: 12px;
+    left: 8px;
+    right: 8px;
     content: "";
     background: #3a3a3a;
     height: 1px; }
   .menu-bottom-wap .menu-bottom-text {
     color: #eee;
-    padding-top: 8px;
+    padding-top: 4px;
     font-size: 12px;
     text-align: center; }
 
@@ -209,7 +212,7 @@ li, a, button, input {
     width: 33%;
     color: #fff;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 28px;
     text-align: center;
     cursor: pointer;
     padding: 0;
@@ -229,10 +232,10 @@ li, a, button, input {
 .menu-bottom-wap .seach-wap {
   position: relative;
   border-radius: 32px;
-  margin: 4px 12px 0 12px;
+  margin: 4px 10px 0 8px;
   height: 24px;
   background: #333;
-  padding: 4px 50px 4px 12px; }
+  padding: 2px 50px 2px 12px; }
   .menu-bottom-wap .seach-wap:hover {
     background: #3a3a3a; }
   .menu-bottom-wap .seach-wap .btn-search {
@@ -240,21 +243,21 @@ li, a, button, input {
     right: 0;
     top: 0;
     border-radius: 18px;
-    width: 21px;
-    height: 21px;
-    padding: 6px 16px 5px;
+    width: 16px;
+    height: 16px;
+    padding: 5px 12px 3px;
     cursor: pointer;
     overflow: hidden; }
     .menu-bottom-wap .seach-wap .btn-search:after {
       content: "";
       display: block;
       color: #fff;
-      background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMzAgMzAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I2ZmZjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNSAyOS41Yy0uNi42LTEuNi42LTIuMiAwTDIwIDIyLjJjLTQuOSAzLjgtMTEuOSAzLjQtMTYuNC0xLTQuOS00LjktNC45LTEyLjcgMC0xNy42czEyLjctNC45IDE3LjYgMGM0LjUgNC41IDQuOCAxMS41IDEgMTYuNGw3LjMgNy4zYy43LjcuNyAxLjYgMCAyLjJ6TTE5IDUuOGMtMy42LTMuNi05LjUtMy42LTEzLjIgMHMtMy42IDkuNSAwIDEzLjJjMy42IDMuNiA5LjUgMy42IDEzLjIgMCAzLjYtMy43IDMuNi05LjYgMC0xMy4yeiIvPjwvc3ZnPg==);
-      width: 21px;
-      height: 21px;
-      background-size: 21px 21px; }
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAxNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEzLjggMTMuOGMtLjMuMy0uNy4zLTEgMGwtMy40LTMuNGMtMi4zIDEuOC01LjYgMS42LTcuNy0uNUMtLjYgNy42LS42IDQgMS43IDEuN3M1LjktMi4zIDguMiAwYzIuMSAyLjEgMi4yIDUuNC41IDcuNmwzLjQgMy40Yy4zLjQuMy44IDAgMS4xek04LjkgMi43QzcuMiAxIDQuNSAxIDIuOCAyLjdzLTEuNyA0LjQgMCA2LjJjMS43IDEuNyA0LjQgMS43IDYuMSAwIDEuNi0xLjcgMS42LTQuNSAwLTYuMnoiLz4KPC9zdmc+Cg==);
+      width: 16px;
+      height: 16px;
+      background-size: 16px 16px; }
     .menu-bottom-wap .seach-wap .btn-search:hover:after {
-      background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIxIiBoZWlnaHQ9IjIxIiB2aWV3Qm94PSIwIDAgMzAgMzAiPjxzdHlsZT4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6IzAwYmUwNjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNSAyOS41Yy0uNi42LTEuNi42LTIuMiAwTDIwIDIyLjJjLTQuOSAzLjgtMTEuOSAzLjQtMTYuNC0xLTQuOS00LjktNC45LTEyLjcgMC0xNy42czEyLjctNC45IDE3LjYgMGM0LjUgNC41IDQuOCAxMS41IDEgMTYuNGw3LjMgNy4zYy43LjcuNyAxLjYgMCAyLjJ6TTE5IDUuOGMtMy42LTMuNi05LjUtMy42LTEzLjIgMHMtMy42IDkuNSAwIDEzLjJjMy42IDMuNiA5LjUgMy42IDEzLjIgMCAzLjYtMy43IDMuNi05LjYgMC0xMy4yeiIvPjwvc3ZnPg==); }
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAxNCI+CiAgPHBhdGggZmlsbD0iIzAwYmUwNiIgZD0iTTEzLjggMTMuOGMtLjMuMy0uNy4zLTEgMGwtMy40LTMuNGMtMi4zIDEuOC01LjYgMS42LTcuNy0uNUMtLjYgNy42LS42IDQgMS43IDEuN3M1LjktMi4zIDguMiAwYzIuMSAyLjEgMi4yIDUuNC41IDcuNmwzLjQgMy40Yy4zLjQuMy44IDAgMS4xek04LjkgMi43QzcuMiAxIDQuNSAxIDIuOCAyLjdzLTEuNyA0LjQgMCA2LjJjMS43IDEuNyA0LjQgMS43IDYuMSAwIDEuNi0xLjcgMS42LTQuNSAwLTYuMnoiLz4KPC9zdmc+Cg==); }
 
 .seach-wap .seach-input {
   background: transparent;
@@ -268,7 +271,7 @@ li, a, button, input {
 
 .maincon {
   height: 100%;
-  margin-left: 250px;
+  margin-left: 239px;
   background: #f5f5f5; }
   .maincon .pdfiframe {
     height: 100%;

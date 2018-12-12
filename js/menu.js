@@ -1,12 +1,14 @@
 !(function() {
     var htmlText = {
         cn: {
-            "contact": "联络",
-            "forum": "论坛"
+            "language": "English",
+            "contact": "联&nbsp;络",
+            "forum": "论&nbsp;坛"
         },
         en: {
-            "contact": "contact",
-            "forum": "forum"
+            "language": "中&nbsp;文",
+            "contact": "Contact",
+            "forum": "Forum"
         }
 
     }
@@ -36,6 +38,7 @@
 
                 $("body").removeClass("len")
             }
+            this.otherLanguage();
         },
         redraw: function() {
             this.drawMenu(this.data);
@@ -85,12 +88,12 @@
         menuOpenToggle: function(e) {
             var $el = $(e.data.el.menuUlWap),
                 $this = $(this),
-                $next = $this.next(); 
+                $next = $this.next();
             $next.slideToggle();
-            $this.parent().toggleClass('open'); 
+            $this.parent().toggleClass('open');
             if (!e.data.multiple) {
                 $el.find('.left-nav-bar-sub').not($next).slideUp().parent().removeClass('open');
-            }; 
+            };
 
         },
         itemSel: function(e) {
@@ -111,22 +114,28 @@
         },
 
         languageToggle: function(e) {
-            var $el = $(e.target),
-                _this = e.data._this;
-            var language = $el.attr("language");
+            var    _this = e.data._this;
+            var language = _this.language;
             switch (language) {
                 case "en":
-                    _this.language = "en";
-                    $el.attr("language", "cn");
-
+                    _this.language = "cn";
                     break;
                 case "cn":
-                    _this.language = "cn";
-                    $el.attr("language", "en");
+                    _this.language = "en";
                     break;
             }
+            _this.otherLanguage();
             _this.redraw();
 
+
+        },
+        otherLanguage: function( ) {
+            var _this=this;
+            var htmlLanguage = htmlText[_this.language];
+            $("[data-len]").each(function() {
+                var key = $(this).attr("data-len");
+                $(this).html(htmlLanguage[key]);
+            })
         }
 
     }
@@ -142,7 +151,7 @@
                     pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     subMenu: [{
                         text: "Arduino衍生控制器",
-                        entext: "Arduino Derived Controller",
+                        entext: "Arduino Derived Controllerer",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }]
 
@@ -156,16 +165,8 @@
                         entext: "Range Sensor",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }, {
-                        text: "电位器",
-                        entext: "Potentiometer",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "按键",
-                        entext: "Button",
-                        pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
-                    }, {
-                        text: "距离传感器",
-                        entext: "Range Sensor",
+                        text: "其余",
+                        entext: "Else",
                         pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     }]
 
@@ -201,8 +202,8 @@
 
                 },
                 {
-                    text: "无线通讯",
-                    entext: "Wireless Communication",
+                    text: "无线",
+                    entext: "Wireless",
                     pdf: "amabat-blp2a/um_amabat-blp2a_chinese",
                     subMenu: [{
                         text: "Wifi",
@@ -237,7 +238,7 @@
 
         var touch3 = function() {
 
-            window.onscroll = function() { 
+            window.onscroll = function() {
                 var top = document.documentElement.scrollTop || document.body.scrollTop;
 
                 if (top <= 0) {
